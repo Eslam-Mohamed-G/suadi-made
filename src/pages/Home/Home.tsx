@@ -598,8 +598,8 @@ export default function Home() {
                             <div className="group border border-mainColor rounded-lg overflow-hidden">
                                 {/* img */}
                                 <div className="w-full bg-gray-100 flex items-center justify-center h-64">
-                                    <div className="w-56 h-56">
-                                        <img src="/products/couch.png" alt="couch" className='w-full object-center group-hover:scale-110 transition-all ease-in-out duration-500' />
+                                    <div className="w-56 h-56 flex items-center justify-center">
+                                        <img src="/products/couch.png" alt="couch" className='w-full h-32 object-center group-hover:scale-110 transition-all ease-in-out duration-500' />
                                     </div>
                                 </div>
 
@@ -643,7 +643,7 @@ export default function Home() {
                             <div className="group border border-mainColor rounded-lg overflow-hidden">
                                 {/* img */}
                                 <div className="w-full bg-gray-100 flex items-center justify-center h-64">
-                                    <div className="w-52 h-52">
+                                    <div className="w-52 h-52 flex items-center justify-center">
                                         <img src="/products/electronic.png" alt="electronic" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
                                     </div>
                                 </div>
@@ -688,7 +688,7 @@ export default function Home() {
                             <div className="group border border-mainColor rounded-lg overflow-hidden">
                                 {/* img */}
                                 <div className="w-full bg-gray-100 flex items-center justify-center h-64">
-                                    <div className="w-52 h-52">
+                                    <div className="w-52 h-52 flex items-center justify-center">
                                         <img src="/products/books.png" alt="books" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
                                     </div>
                                 </div>
