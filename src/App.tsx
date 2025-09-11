@@ -9,6 +9,7 @@ import Servies from './pages/Servies/Servies';
 import CompanyDetails from './pages/CompanyDetails/CompanyDetails';
 import ProductDetails from './pages/ProductDetails/ProductDetails';
 import Chart from './pages/Chart/Chart';
+import CompletePurchase from './pages/CompletePurchase/CompletePurchase';
 
 const routes = createBrowserRouter([
   { path: "/", element: <Layouts />, children:[
@@ -18,6 +19,7 @@ const routes = createBrowserRouter([
     { path: "companyDetails", element: <CompanyDetails/> },
     { path: "productDetails", element: <ProductDetails/> },
     { path: "chart", element: <Chart/> },
+    { path: "completePurchase", element: <CompletePurchase/> },
   ]} 
 ]);
 function App() {

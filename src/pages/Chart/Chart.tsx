@@ -128,7 +128,7 @@ export default function Chart() {
                         </ul>
                         <h1 className='flex flex-row items-center justify-between text-2xl font-bold text-mainColor'><span className='text-lg text-paragraphTextColor'>الإجمالي:</span>784.88 ر.س</h1>
                         <div className="flex flex-col gap-2">
-                            <button className='bg-mainColor rounded-lg text-white cursor-pointer py-2'><span>إتمام الشراء</span></button>
+                            <Link to="/completePurchase" className='bg-mainColor rounded-lg text-white text-center cursor-pointer py-2'><span>إتمام الشراء</span></Link>
                             <button className='border border-mainColor rounded-lg text-mainColor cursor-pointer py-2'><span>متابعة التسوق</span></button>
                         </div>
                     </div>
