@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import Compaines from './pages/Compaines/Compaines';
 import Servies from './pages/Servies/Servies';
 import CompanyDetails from './pages/CompanyDetails/CompanyDetails';
+import ProductDetails from './pages/ProductDetails/ProductDetails';
 
 const routes = createBrowserRouter([
   { path: "/", element: <Layouts />, children:[
@@ -14,6 +15,7 @@ const routes = createBrowserRouter([
     { path: "compaines", element: <Compaines/> },
     { path: "servies", element: <Servies/> },
     { path: "companyDetails", element: <CompanyDetails/> },
+    { path: "productDetails", element: <ProductDetails/> },
   ]} 
 ]);
 function App() {

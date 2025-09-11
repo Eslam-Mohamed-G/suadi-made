@@ -1,5 +1,6 @@
 import React from 'react'
 import StarRating from './StarRating'
+import { Link } from 'react-router-dom'
 
 export default function CompanyDetails() {
   return (
@@ -185,7 +186,7 @@ export default function CompanyDetails() {
                       <p className='text-paragraphTextColor text-xl mt-4'>زيت طبخ طبيعي عالي الجودة من أفضل المصادر</p>
                     </header>
                     <div className="flex flex-row justify-between gap-5 w-full">
-                      <button className='bg-white w-full py-2 rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</button>
+                      <Link to="/productDetails" className='bg-white w-full py-2 text-center rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
                       <button className='bg-mainColor w-full flex items-center justify-center gap-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
                         <img src="/products/ShoppingCart.png" alt="ShoppingCart" className='w-5 h-5' />
                         <span className='text-white'>أضف إلى السلة</span>
@@ -212,7 +213,7 @@ export default function CompanyDetails() {
                       <p className='text-paragraphTextColor text-xl mt-4'>زيت طبخ طبيعي عالي الجودة من أفضل المصادر</p>
                     </header>
                     <div className="flex flex-row justify-between gap-5 w-full">
-                      <button className='bg-white w-full py-2 rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</button>
+                      <Link to="/productDetails" className='bg-white w-full py-2 text-center rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
                       <button className='bg-mainColor w-full flex items-center justify-center gap-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
                         <img src="/products/ShoppingCart.png" alt="ShoppingCart" className='w-5 h-5' />
                         <span className='text-white'>أضف إلى السلة</span>
@@ -239,7 +240,7 @@ export default function CompanyDetails() {
                       <p className='text-paragraphTextColor text-xl mt-4'>زيت طبخ طبيعي عالي الجودة من أفضل المصادر</p>
                     </header>
                     <div className="flex flex-row justify-between gap-5 w-full">
-                      <button className='bg-white w-full py-2 rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</button>
+                      <Link to="/productDetails" className='bg-white w-full py-2 text-center rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
                       <button className='bg-mainColor w-full flex items-center justify-center gap-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
                         <img src="/products/ShoppingCart.png" alt="ShoppingCart" className='w-5 h-5' />
                         <span className='text-white'>أضف إلى السلة</span>
@@ -266,7 +267,7 @@ export default function CompanyDetails() {
                       <p className='text-paragraphTextColor text-xl mt-4'>زيت طبخ طبيعي عالي الجودة من أفضل المصادر</p>
                     </header>
                     <div className="flex flex-row justify-between gap-5 w-full">
-                      <button className='bg-white w-full py-2 rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</button>
+                      <Link to="/productDetails" className='bg-white w-full py-2 text-center rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
                       <button className='bg-mainColor w-full flex items-center justify-center gap-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
                         <img src="/products/ShoppingCart.png" alt="ShoppingCart" className='w-5 h-5' />
                         <span className='text-white'>أضف إلى السلة</span>
@@ -293,7 +294,7 @@ export default function CompanyDetails() {
                       <p className='text-paragraphTextColor text-xl mt-4'>زيت طبخ طبيعي عالي الجودة من أفضل المصادر</p>
                     </header>
                     <div className="flex flex-row justify-between gap-5 w-full">
-                      <button className='bg-white w-full py-2 rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</button>
+                      <Link to="/productDetails" className='bg-white w-full py-2 text-center rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
                       <button className='bg-mainColor w-full flex items-center justify-center gap-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
                         <img src="/products/ShoppingCart.png" alt="ShoppingCart" className='w-5 h-5' />
                         <span className='text-white'>أضف إلى السلة</span>
@@ -320,7 +321,7 @@ export default function CompanyDetails() {
                       <p className='text-paragraphTextColor text-xl mt-4'>زيت طبخ طبيعي عالي الجودة من أفضل المصادر</p>
                     </header>
                     <div className="flex flex-row justify-between gap-5 w-full">
-                      <button className='bg-white w-full py-2 rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</button>
+                      <Link to="/productDetails" className='bg-white w-full py-2 text-center rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
                       <button className='bg-mainColor w-full flex items-center justify-center gap-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
                         <img src="/products/ShoppingCart.png" alt="ShoppingCart" className='w-5 h-5' />
                         <span className='text-white'>أضف إلى السلة</span>
