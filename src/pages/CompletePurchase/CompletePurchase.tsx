@@ -24,7 +24,89 @@ export default function CompletePurchase() {
                     </div>
                 </div>
             </header>
-            
+
+            <form action="" className='flex flex-col gap-5'>
+                <div className="bg-white rounded-2xl border border-borderColor flex flex-col justify-between gap-5 p-4 md:p-6 shadow">
+                    <h1 className='text-3xl text-textColor border-b border-borderColor pb-2'>معلومات العميل والتسليم</h1>
+
+                    <div className="flex flex-col gap-2 w-full">
+                        <label htmlFor="userName"><span className='text-lg text-textColor font-bold'>الاسم الكامل</span><span className='text-red-500'>*</span></label>
+                        <div className="relative">
+                            <img src="/one-user.svg" alt="one-user" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
+                            <input type="text" name="userName" id="userName" placeholder='أدخل اسمك بالكامل' className='border border-borderColor text-paragraphTextColor w-full rounded-lg py-2 ps-8' />
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-2 w-full">
+                        <label htmlFor="phone"><span className='text-lg text-textColor font-bold'>رقم الجوال</span><span className='text-red-500'>*</span></label>
+                        <div className="relative">
+                            <img src="/Phone.svg" alt="Phone" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
+                            <input type="text" name="phone" id="phone" placeholder='أدخل رقم جوالك' className='border border-borderColor text-paragraphTextColor w-full rounded-lg py-2 ps-8' />
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-2 w-full">
+                        <label htmlFor="userName"><span className='text-lg text-textColor font-bold'>بريدك الإلكتروني</span><span className='text-red-500'>*</span></label>
+                        <div className="relative">
+                            <img src="/Envelope.svg" alt="Envelope" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
+                            <input type="text" name="userName" id="userName" placeholder='أدخل بريدك الإلكتروني' className='border border-borderColor text-paragraphTextColor w-full rounded-lg py-2 ps-8' />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-white rounded-2xl border border-borderColor flex flex-col justify-between gap-5 p-4 md:p-6 shadow">
+                    <h1 className='text-3xl text-textColor border-b border-borderColor pb-2'>عنوان التسليم</h1>
+
+                    <div className="relative">
+                        <input
+                            type="text"
+                            name='area'
+                            placeholder='المنطقة'
+                            className="w-full border border-gray-400 rounded-lg p-2 cursor-pointer focus:outline-none hover:border-mainColor hover:bg-secondBackGroundColor transition-colors ease-in-out duration-500 placeholder:text-lg placeholder:text-textColor"
+                        />
+                        <span className={`absolute end-1 top-1/2 -translate-y-1/2 transition-all ease-in-out duration-300`}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-textColor"><path d="m18 15-6-6-6 6" /></svg>
+                        </span>
+                    </div>
+
+                    <div className="flex flex-col gap-2 w-full">
+                        <label htmlFor="userName"><span className='text-lg text-textColor font-bold'>المدينة</span><span className='text-red-500'>*</span></label>
+                        <div className="relative">
+                            <input type="text" name="city" id="city" placeholder='المدينة' className='border border-borderColor text-paragraphTextColor w-full rounded-lg py-2 ps-2' />
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-2 w-full">
+                        <label htmlFor="userName"><span className='text-lg text-textColor font-bold'>العنوان</span><span className='text-red-500'>*</span></label>
+                        <div className="relative">
+                            <input type="text" name="adress" id="adress" placeholder='أدخل عنوانك كاملا هنا' className='border border-borderColor text-paragraphTextColor w-full rounded-lg py-2 ps-2' />
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-2 w-full">
+                        <label htmlFor="mobile"><span className='text-lg text-textColor font-bold'>رقم الجوال</span></label>
+                        <div className="relative">
+                            <img src="/Phone.svg" alt="Phone" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
+                            <input type="text" name="mobile" id="mobile" placeholder='أدخل رقم جوالك' className='border border-borderColor text-paragraphTextColor w-full rounded-lg py-2 ps-8' />
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col gap-2 w-full">
+                        <label htmlFor="textarea"><span className='text-lg text-textColor font-bold'>ملاحظات للبائع (اختياري)</span></label>
+                        <textarea name="textarea" id="textarea" cols={30} rows={10} className='border border-borderColor rounded-2xl p-4'></textarea>
+                    </div>
+                </div>
+            </form>
+
+            <div className="flex flex-row justify-between">
+                <button className='border border-mainColor text-mainColor rounded-lg py-2 px-4 flex flex-row items-center gap-2'>
+                    <img src="/ArrowRight.svg" alt="ArrowRight" className='w-4 h-4' />
+                    <span>العودة للسلة</span>
+                </button>
+                <button className='border border-mainColor text-mainColor rounded-lg py-2 px-4 flex flex-row items-center gap-2'>
+                    <img src="/ArrowRight.svg" alt="ArrowRight" className='w-4 h-4' />
+                    <span>الخطوة التالية</span>
+                </button>
+            </div>
         </div>
     )
 }
