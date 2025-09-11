@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+    --color-mainColor: #1A6C37;
+    --color-backGroundColor: #EAEBEAE5;
+    --color-secondBackGroundColor: #79C04352;
+    --color-secondaryColor: #B49C5C;
+    --color-textColor: #2C3E50;
+    --color-paragraphTextColor: #6D6D6D;
+    --color-secondaryTextColor: #E3CB89;
+    --color-borderColor: #D0D0D0;
+
+    --breakpoint-xmd: 896px;
+}
+
+/* src/index.css أو App.css */
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo';
+}  
+
+.star-rating {
+    color: transparent;
+    background: linear-gradient(90deg,
+            gold var(--rating-percent),
+            lightgray var(--rating-percent));
+    -webkit-background-clip: text;
+    background-clip: text;
+}

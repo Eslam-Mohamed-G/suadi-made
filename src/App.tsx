@@ -1,0 +1,27 @@
+import React from 'react'
+import './App.css'
+import Navbar from './components/Navbar/Navbar'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Layouts from './layouts/Layouts';
+import Home from './pages/Home/Home';
+import Compaines from './pages/Compaines/Compaines';
+import Servies from './pages/Servies/Servies';
+import CompanyDetails from './pages/CompanyDetails/CompanyDetails';
+
+const routes = createBrowserRouter([
+  { path: "/", element: <Layouts />, children:[
+    { index: true, element: <Home/> },
+    { path: "compaines", element: <Compaines/> },
+    { path: "servies", element: <Servies/> },
+    { path: "companyDetails", element: <CompanyDetails/> },
+  ]} 
+]);
+function App() {
+
+  return (
+
+    <RouterProvider router={routes} />
+  )
+}
+
+export default App
