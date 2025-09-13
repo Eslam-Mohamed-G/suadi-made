@@ -6,7 +6,7 @@ export default function CompanySingUp() {
     return (
         <div className="min-h-dvh pt-16 pb-8 px-4 md:px-8 lg:px-16 bg-backGroundColor">
             <div className="flex flex-col xmd:flex-row w-full xmd:w-fit mx-auto bg-white rounded-2xl border border-borderColor shadow overflow-hidden">
-                <div className="w-full xmd:w-80 xlg:w-96 border">
+                <div className="w-full xmd:w-80 xlg:w-96">
                     <GreenAuthenticator />
                 </div>
 
