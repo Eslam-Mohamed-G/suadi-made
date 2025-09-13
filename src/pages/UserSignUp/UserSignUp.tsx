@@ -5,11 +5,11 @@ export default function UserSignUp() {
     return (
         <div className="min-h-dvh pt-16 px-4 md:px-8 lg:px-16 bg-backGroundColor">
             <div className="flex flex-col xmd:flex-row w-full xmd:w-fit mx-auto bg-white rounded-2xl border border-borderColor shadow overflow-hidden">
-                <div className="w-full xmd:w-96">
+                <div className="w-full xmd:w-80 xlg:w-96">
                     <GreenAuthenticator />
                 </div>
 
-                <div className="flex items-center w-full px-4 xmd:px-8 xmd:ps-8 xmd:w-xl lg:w-2xl py-8">
+                <div className="flex items-center w-full xmd:w-lg lg:w-xl px-4 xmd:px-8 py-8">
                     <form action="" className='w-full'>
                         <header className='text-center'>
                             <h1 className='text-3xl font-bold text-textColor'>إنشاء حساب عميل</h1>

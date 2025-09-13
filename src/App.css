@@ -11,6 +11,7 @@
     --color-borderColor: #D0D0D0;
 
     --breakpoint-xmd: 896px;
+    --breakpoint-xlg: 1050px;
 }
 
 /* src/index.css أو App.css */
