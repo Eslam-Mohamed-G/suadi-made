@@ -1,6 +1,10 @@
 import React from 'react'
+type propsType = {
+    header: string;
+    text: string;
+};
 
-export default function GreenAuthenticator() {
+export default function GreenAuthenticator({header, text}: propsType) {
     return (
         <div className='bg-mainColor h-full relative flex pb-4 xmd:pt-16 px-4 xmd:px-8'>
             {/* logo */}
@@ -12,8 +16,8 @@ export default function GreenAuthenticator() {
                 <div className="w-40 h-40 content-center">
                     <img src="/footer/white-saudi-made-logo.png" alt="white-saudi-made-logo" className="w-full object-contain" />
                 </div>
-                <h1 className='text-2xl font-bold'>اكتشف أفضل الشركات السعودية المتخصصة</h1>
-                <p className='text-lg'>اكتشف الشركات الموثوقة، اطلب الخدمات، ووسع شبكة علاقاتك التجارية</p>
+                <h1 className='text-2xl font-bold'>{header}</h1>
+                <p className='text-lg'>{text}</p>
 
                 <ul className='flex flex-row xmd:flex-col gap-2 mt-5'>
                     <li className='flex flex-row items-center gap-2'>

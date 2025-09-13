@@ -7,13 +7,13 @@ export default function CompanySingUp() {
         <div className="min-h-dvh pt-16 pb-8 px-4 md:px-8 lg:px-16 bg-backGroundColor">
             <div className="flex flex-col xmd:flex-row w-full xmd:w-fit mx-auto bg-white rounded-2xl border border-borderColor shadow overflow-hidden">
                 <div className="w-full xmd:w-80 xlg:w-96">
-                    <GreenAuthenticator />
+                    <GreenAuthenticator header={`انضم إلى "صناعة سعودية" كشركة`} text="أنشئ حساب شركتك بسهولة، اعرض خدماتك، تواصل مع عملاء جدد، واستقبل طلبات مباشرة من خلال منصتنا" />
                 </div>
 
                 <div className="flex flex-col gap-5 items-center w-full xmd:w-lg lg:w-xl px-4 xmd:px-8 py-8">
                     <form action="" className='w-full'>
                         <header className='text-center'>
-                            <h1 className='text-3xl font-bold text-textColor'>إنشاء حساب شركة</h1>
+                            {/* <h1 className='text-3xl font-bold text-textColor'>إنشاء حساب شركة</h1> */}
                             <p className='text-lg text-paragraphTextColor'>سجّل شركتك خلال دقائق وابدأ استقبال طلبات العملاء</p>
                         </header>
 
