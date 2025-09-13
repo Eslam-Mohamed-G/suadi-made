@@ -10,6 +10,7 @@ import CompanyDetails from './pages/CompanyDetails/CompanyDetails';
 import ProductDetails from './pages/ProductDetails/ProductDetails';
 import Chart from './pages/Chart/Chart';
 import CompletePurchase from './pages/CompletePurchase/CompletePurchase';
+import CompletePurchase2 from './pages/CompletePurchase/CompletePurchase2';
 
 const routes = createBrowserRouter([
   { path: "/", element: <Layouts />, children:[
@@ -20,6 +21,7 @@ const routes = createBrowserRouter([
     { path: "productDetails", element: <ProductDetails/> },
     { path: "chart", element: <Chart/> },
     { path: "completePurchase", element: <CompletePurchase/> },
+    { path: "completePurchase2", element: <CompletePurchase2/> },
   ]} 
 ]);
 function App() {

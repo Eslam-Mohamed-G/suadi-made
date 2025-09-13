@@ -103,9 +103,9 @@ export default function CompletePurchase() {
                     <img src="/ArrowRight.svg" alt="ArrowRight" className='w-4 h-4' />
                     <span>العودة للسلة</span>
                 </Link>
-                <Link to="/" className='text-white bg-mainColor rounded-lg py-2 px-4 flex flex-row items-center gap-2 cursor-pointer'>
+                <Link to="/completePurchase2" className='text-white bg-mainColor rounded-lg py-2 px-4 flex flex-row items-center gap-2 cursor-pointer'>
                     <span>الخطوة التالية</span>
-<svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-left-icon lucide-arrow-left"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-left-icon lucide-arrow-left"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
                 </Link>
             </div>
         </div>
