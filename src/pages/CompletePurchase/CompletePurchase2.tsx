@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function CompletePurchase2() {
+    const [modal, setModal] = useState(false);
+    const isModalOpen = ()=>{
+        setModal(!modal)
+    }
     return (
         <div className='bg-backGroundColor flex flex-col gap-5 py-12 px-4 md:px-8 lg:px-16'>
             <header className='flex flex-col items-center gap-5'>
@@ -114,11 +118,41 @@ export default function CompletePurchase2() {
                     <img src="/ArrowRight.svg" alt="ArrowRight" className='w-4 h-4' />
                     <span>الخطوة السابقة</span>
                 </Link>
-                <button className='text-white bg-mainColor rounded-lg py-2 px-4 flex flex-row items-center gap-2 cursor-pointer'>
+                <button onClick={isModalOpen} className='text-white bg-mainColor rounded-lg py-2 px-4 flex flex-row items-center gap-2 cursor-pointer'>
                     <span>تأكيد الطلب</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-left-icon lucide-arrow-left"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
                 </button>
             </div>
+
+            <div id="popup-modal" tabIndex={-1} className={`${modal ? "hidden": "block"} overflow-y-auto overflow-x-hidden fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center w-full md:inset-0 bg-black/15`}>
+                <div className="relative p-4 w-full max-w-md max-h-full">
+                    <div className="relative bg-white rounded-lg shadow-sm p-4">
+                        <button type="button" onClick={isModalOpen} className="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal">
+                            <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                            </svg>
+                            <span className="sr-only">Close modal</span>
+                        </button>
+                        <div className="p-4 md:p-5 text-center flex flex-col items-center justify-center">
+                            <div className="flex items-center justify-center bg-secondBackGroundColor w-14 h-14 rounded-full mb-3">
+                                <img src="/CheckCircle.png" alt="CheckCircle" className='w-6 h-6' />
+                            </div>
+                            <h3 className="text-2xl font-normal text-textColor">تم إنشاء طلبك بنجاح</h3>
+                            <p className='text-paragraphTextColor text-sm mb-2'>تم إنشاء طلبات منفصلة لكل شركة.</p>
+                            <p className='text-textColor'><span>رقم الطلب:</span> <span> ORD-1757497407921</span></p>
+                        </div>
+
+                        <div className="flex flex-col gap-4 bg-secondBackGroundColor/30 rounded-2xl p-4">
+                            <ul className='flex flex-col gap-2 text-paragraphTextColor border-b border-borderColor pb-4'>
+                                <li className='flex flex-row items-center justify-between'><span>الإجمالي الفرعي</span> <span>682.50 ر.س</span></li>
+                                <li className='flex flex-row items-center justify-between'><span>ضريبة القيمة المضافة (15%)</span> <span>102.38 ر.س</span></li>
+                            </ul>
+                            <h1 className='flex flex-row items-center justify-between text-2xl font-bold text-mainColor'><span className='text-lg text-paragraphTextColor'>الإجمالي:</span>784.88 ر.س</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     )
 }
