@@ -37,9 +37,9 @@ export default function Navbar() {
             </div>
 
             <div className="flex flex-row gap-4">
-                <button className='border border-mainColor rounded-lg px-4 py-2'>
+                <Link to="/createAccount" className='border border-mainColor rounded-lg px-4 py-2'>
                     <span>إنشاء حساب</span>
-                </button>
+                </Link>
                 <button className='bg-mainColor rounded-lg px-4 py-2'>
                     <span className='text-white'>تسجيل دخول</span>
                 </button>
