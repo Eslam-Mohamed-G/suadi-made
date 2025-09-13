@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function GreenAuthenticator() {
     return (
-        <div className='bg-mainColor h-full relative flex pt-20 px-8'>
+        <div className='bg-mainColor h-full relative flex pb-4 xmd:pt-16 px-8'>
             {/* logo */}
             <div className="w-28 h-28 absolute end-0 top-0">
                 <img src="/min-logo-end.png" alt="min-logo-end" className="w-full object-contain" />
