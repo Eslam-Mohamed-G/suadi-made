@@ -12,6 +12,7 @@ import Chart from './pages/Chart/Chart';
 import CompletePurchase from './pages/CompletePurchase/CompletePurchase';
 import CompletePurchase2 from './pages/CompletePurchase/CompletePurchase2';
 import CreateAccount from './pages/CreateAccount/CreateAccount';
+import UserSignUp from './pages/UserSignUp/UserSignUp';
 
 const routes = createBrowserRouter([
   { path: "/", element: <Layouts />, children:[
@@ -24,6 +25,7 @@ const routes = createBrowserRouter([
     { path: "completePurchase", element: <CompletePurchase/> },
     { path: "completePurchase2", element: <CompletePurchase2/> },
     { path: "createAccount", element: <CreateAccount/> },
+    { path: "userSignUp", element: <UserSignUp/> },
   ]} 
 ]);
 function App() {
