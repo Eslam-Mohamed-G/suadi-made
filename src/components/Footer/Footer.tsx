@@ -1,11 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import logoEnd from '../../assets/logo/min-logo-end.webp'
 
 export default function Footer() {
     return (
         <div className="bg-mainColor relative z-10 px-4 md:px-8 lg:px-16 py-16 flex flex-col gap-5 items-center justify-center overflow-hidden">
             <div className="w-28 h-28 absolute end-0 top-0">
-                <img src="/min-logo-end.png" alt="min-logo-end" className="w-full object-contain" />
+                <img src={logoEnd} loading='lazy' alt="min-logo-end" className="w-full object-contain" />
             </div>
 
             <div className="flex flex-row flex-wrap justify-center md:justify-around w-full pb-10 border-b border-secondaryColor">

@@ -4,6 +4,8 @@ import mainPhoto from '../../assets/logo/main-photo.webp';
 import campanyImg from '../../assets/images/campany-img.webp';
 import FeaturedCategories from '../../components/FeaturedCategories/FeaturedCategories';
 import ProductCard, { products } from '../../components/ProductCard/ProductCard';
+import logoEnd from '../../assets/logo/min-logo-end.webp'
+import logoStart from '../../assets/logo/min-logo.webp'
 
 export default function Home() {
     return (
@@ -235,7 +237,7 @@ export default function Home() {
                 {/* green div */}
                 <div className="bg-mainColor relative z-10 h-56 flex flex-row items-center justify-center overflow-hidden">
                     <div className="w-32 h-32 absolute start-0 bottom-6">
-                        <img src="/min-logo.png" alt="min-logo" className="w-full object-contain" />
+                        <img src={logoStart} alt="min-logo" loading='lazy' className="w-full object-contain" />
                     </div>
                     <div className="text-center">
                         <h1 className='text-4xl font-medium text-white'>جاهز للبدء؟</h1>
@@ -245,7 +247,7 @@ export default function Home() {
                         </button>
                     </div>
                     <div className="w-28 h-28 absolute end-0 top-0">
-                        <img src="/min-logo-end.png" alt="min-logo-end" className="w-full object-contain" />
+                        <img src={logoEnd} alt="min-logo-end" loading='lazy' className="w-full object-contain" />
                     </div>
                 </div>
 
@@ -275,7 +277,7 @@ export default function Home() {
                 {/* green div */}
                 <div className="bg-mainColor relative z-10 py-16 px-4 md:px-8 lg:px-16 flex flex-row items-center justify-center overflow-hidden">
                     <div className="w-32 h-32 absolute start-0 bottom-6">
-                        <img src="/min-logo.png" alt="min-logo" className="w-full object-contain" />
+                        <img src={logoStart} alt="min-logo" loading='lazy' className="w-full object-contain" />
                     </div>
                     <div className="text-center flex flex-col gap-5">
                         <header className='text-center'>

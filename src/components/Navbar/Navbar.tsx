@@ -1,12 +1,13 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom';
+import mainLogo from '../../assets/logo/saudi-made-logo.webp'
 
 export default function Navbar() {
     return (
         <div className="flex flex-row items-center justify-between px-4 md:px-8 lg:px-16 border-b h-fit py-4 text-mainColor">
             <div className="flex flex-row items-center justify-start gap-10">
                 <Link to="/" className="w-10 h-10">
-                    <img src="/saudi-made-logo.png" alt="saudi-made-logo" className="w-full object-contain" />
+                    <img src={mainLogo} alt="saudi-made-logo" className="w-full object-contain" />
                 </Link>
 
                 <ul className='hidden md:flex flex-row gap-5 font-medium text-2xl h-full mt-2 '>
