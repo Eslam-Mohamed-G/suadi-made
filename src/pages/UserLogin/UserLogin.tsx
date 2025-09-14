@@ -1,5 +1,6 @@
 import React from 'react'
 import GreenAuthenticator from '../../components/GreenAuthenticator/GreenAuthenticator'
+import { Link } from 'react-router-dom'
 
 export default function UserLogin() {
     return (
@@ -52,7 +53,8 @@ export default function UserLogin() {
                             </div>
                         </div>
 
-                        <button type='submit' className='bg-mainColor text-center text-white rounded-lg w-full py-2 mt-4 cursor-pointer'>تسجيل الدخول</button>
+                        {/* <button type='submit' className='bg-mainColor text-center text-white rounded-lg w-full py-2 mt-4 cursor-pointer'>تسجيل الدخول</button> */}
+                        <Link to="/userProfile" className='bg-mainColor text-center text-white rounded-lg flex justify-center w-full py-2 mt-4 cursor-pointer'>تسجيل الدخول</Link>
                     </form>
 
                     <div className="flex flex-row gap-1 text-textColor">
