@@ -142,10 +142,10 @@ export default function Home() {
                                     <span className='text-sm text-paragraphTextColor'>(156)</span>
                                 </div>
 
-                                <div className="group">
-                                    <button className='border border-mainColor rounded-lg py-2 w-full group-hover:bg-mainColor transition-colors ease-in-out duration-500 cursor-pointer'>
-                                        <Link to="/companyDetails" className='text-xl group-hover:text-white transition-colors ease-in-out duration-500'>عرض الشركة</Link>
-                                    </button>
+                                <div className="group w-full">
+                                    <Link to="/companyDetails" className='border border-mainColor rounded-lg py-2 flex justify-center w-full group-hover:bg-mainColor transition-colors ease-in-out duration-500 cursor-pointer'>
+                                        <span className='text-xl group-hover:text-white transition-colors ease-in-out duration-500'>عرض الشركة</span>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -153,9 +153,9 @@ export default function Home() {
                 </div>
 
                 <div className="group">
-                    <button className='border border-mainColor rounded-lg px-10 py-1 w-fit bg-white group-hover:bg-mainColor cursor-pointer transition-colors ease-in-out duration-500'>
+                    <Link to="/compaines" className='border border-mainColor rounded-lg px-10 py-2 w-fit bg-white group-hover:bg-mainColor cursor-pointer transition-colors ease-in-out duration-500'>
                         <span className='text-mainColor text-lg font-medium group-hover:text-white transition-colors ease-in-out duration-500'>عرض جميع الشركات</span>
-                    </button>
+                    </Link>
                 </div>
             </section>
 

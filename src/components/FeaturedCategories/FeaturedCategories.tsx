@@ -12,7 +12,7 @@ export default function FeaturedCategories({ header, text, img }: propsType) {
             <div className="border border-mainColor rounded-lg py-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
                 <div className="flex flex-col gap-2 justify-center items-center">
                     <div className="rounded-full w-20 h-20 bg-mainColor text-white group-hover:text-mainColor group-hover:bg-white flex items-center justify-center transition-colors ease-in-out duration-500">
-                        <img src={img} alt="" className='text-white group-hover:text-mainColor transition-colors duration-500' />
+                        <img src={img} alt={header} className='text-white group-hover:text-mainColor transition-colors duration-500' />
                     </div>
 
                     <div className="flex flex-col items-center justify-center gap-1 text-textColor group-hover:text-white transition-colors ease-in-out duration-500">
