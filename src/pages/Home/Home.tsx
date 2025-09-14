@@ -220,140 +220,52 @@ export default function Home() {
                 </header>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5 w-full">
-                    <div className="flex flex-col gap-4 border border-mainColor rounded-2xl p-4">
-                        <header className="flex flex-row gap-2 items-center">
-                            {/* img */}
-                            <div className="w-40 h-40">
-                                <img src="/campany-img.png" alt="campany-img" className='w-full' />
-                            </div>
-                            <div className="flex flex-col gap-2">
-                                <h3 className='text-xl flex flex-row items-center justify-between'>لوجيستك الخليج <img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4' /></h3>
-                                <span className='bg-secondaryColor text-white rounded-2xl px-3 py-2'>الخدمات اللوجيستية</span>
-                            </div>
-                        </header>
-
-                        <div className="flex flex-col gap-4">
-                            <p className='text-paragraphTextColor text-lg'>خدمات شحن وتوزيع شاملة في جميع أنحاء المملكة</p>
-                            <div className="flex flex-row justify-between items-center text-paragraphTextColor text-lg">
-                                <span className='flex flex-row items-center justify-center gap-1'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-paragraphTextColor"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx={12} cy={10} r={3} /></svg>
-                                    الخبر
-                                </span>
-                                <span className='flex flex-row items-center justify-center gap-1'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx={12} cy={12} r={3} /></svg>
-                                    9.7k
-                                </span>
-                            </div>
-
-                            <div className="flex flex-row items-center gap-2">
-                                <div className="flex flex-row items-center">
-                                    <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                    <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                    <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                    <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                    <img src="/gray-star.png" alt="star" className='w-5 h-5' />
+                    {Array.from({ length: 3 }, (_, i) => (
+                        <div key={i} className="flex flex-col gap-4 border border-mainColor rounded-2xl p-4">
+                            <header className="flex flex-row gap-2 items-center">
+                                {/* img */}
+                                <div className="w-40 h-40">
+                                    <img src={campanyImg} alt="campany-img" loading='lazy' className='w-full' />
                                 </div>
-                                <span>4.7</span>
-                                <span className='text-sm text-paragraphTextColor'>(156)</span>
-                            </div>
+                                <div className="flex flex-col gap-2">
+                                    <h3 className='text-xl flex flex-row items-center justify-between'>لوجيستك الخليج <img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4' /></h3>
+                                    <span className='bg-secondaryColor text-white rounded-2xl px-3 py-2'>الخدمات اللوجيستية</span>
+                                </div>
+                            </header>
 
-                            <div className="group">
-                                <button className='border border-mainColor rounded-lg py-2 w-full group-hover:bg-mainColor transition-colors ease-in-out duration-500 cursor-pointer'>
-                                    <Link to="/companyDetails" className='text-xl group-hover:text-white transition-colors ease-in-out duration-500'>عرض الشركة</Link>
-                                </button>
+                            <div className="flex flex-col gap-4">
+                                <p className='text-paragraphTextColor text-lg'>خدمات شحن وتوزيع شاملة في جميع أنحاء المملكة</p>
+                                <div className="flex flex-row justify-between items-center text-paragraphTextColor text-lg">
+                                    <span className='flex flex-row items-center justify-center gap-1'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-paragraphTextColor"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx={12} cy={10} r={3} /></svg>
+                                        الخبر
+                                    </span>
+                                    <span className='flex flex-row items-center justify-center gap-1'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx={12} cy={12} r={3} /></svg>
+                                        9.7k
+                                    </span>
+                                </div>
+
+                                <div className="flex flex-row items-center gap-2">
+                                    <div className="flex flex-row items-center">
+                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
+                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
+                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
+                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
+                                        <img src="/gray-star.png" alt="star" className='w-5 h-5' />
+                                    </div>
+                                    <span>4.7</span>
+                                    <span className='text-sm text-paragraphTextColor'>(156)</span>
+                                </div>
+
+                                <div className="group">
+                                    <button className='border border-mainColor rounded-lg py-2 w-full group-hover:bg-mainColor transition-colors ease-in-out duration-500 cursor-pointer'>
+                                        <Link to="/companyDetails" className='text-xl group-hover:text-white transition-colors ease-in-out duration-500'>عرض الشركة</Link>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div className="flex flex-col gap-4 border border-mainColor rounded-2xl p-4">
-                        <header className="flex flex-row gap-2 items-center">
-                            {/* img */}
-                            <div className="w-40 h-40">
-                                <img src={campanyImg} alt="campany-img" loading='lazy' className='w-full' />
-                            </div>
-                            <div className="flex flex-col gap-2">
-                                <h3 className='text-xl flex flex-row items-center justify-between'>لوجيستك الخليج <img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4' /></h3>
-                                <span className='bg-secondaryColor text-white rounded-2xl px-3 py-2'>الخدمات اللوجيستية</span>
-                            </div>
-                        </header>
-
-                        <div className="flex flex-col gap-4">
-                            <p className='text-paragraphTextColor text-lg'>خدمات شحن وتوزيع شاملة في جميع أنحاء المملكة</p>
-                            <div className="flex flex-row justify-between items-center text-paragraphTextColor text-lg">
-                                <span className='flex flex-row items-center justify-center gap-1'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-paragraphTextColor"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx={12} cy={10} r={3} /></svg>
-                                    الخبر
-                                </span>
-                                <span className='flex flex-row items-center justify-center gap-1'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx={12} cy={12} r={3} /></svg>
-                                    9.7k
-                                </span>
-                            </div>
-
-                            <div className="flex flex-row items-center gap-2">
-                                <div className="flex flex-row items-center">
-                                    <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                    <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                    <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                    <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                    <img src="/gray-star.png" alt="star" className='w-5 h-5' />
-                                </div>
-                                <span>4.7</span>
-                                <span className='text-sm text-paragraphTextColor'>(156)</span>
-                            </div>
-
-                            <div className="group">
-                                <button className='border border-mainColor rounded-lg py-2 w-full group-hover:bg-mainColor transition-colors ease-in-out duration-500 cursor-pointer'>
-                                    <Link to="/companyDetails" className='text-xl group-hover:text-white transition-colors ease-in-out duration-500'>عرض الشركة</Link>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex flex-col gap-4 border border-mainColor rounded-2xl p-4">
-                        <header className="flex flex-row gap-2 items-center">
-                            {/* img */}
-                            <div className="w-40 h-40">
-                                <img src="/campany-img.png" alt="campany-img" className='w-full' />
-                            </div>
-                            <div className="flex flex-col gap-2">
-                                <h3 className='text-xl flex flex-row items-center justify-between'>لوجيستك الخليج <img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4' /></h3>
-                                <span className='bg-secondaryColor text-white rounded-2xl px-3 py-2'>الخدمات اللوجيستية</span>
-                            </div>
-                        </header>
-
-                        <div className="flex flex-col gap-4">
-                            <p className='text-paragraphTextColor text-lg'>خدمات شحن وتوزيع شاملة في جميع أنحاء المملكة</p>
-                            <div className="flex flex-row justify-between items-center text-paragraphTextColor text-lg">
-                                <span className='flex flex-row items-center justify-center gap-1'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-paragraphTextColor"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx={12} cy={10} r={3} /></svg>
-                                    الخبر
-                                </span>
-                                <span className='flex flex-row items-center justify-center gap-1'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx={12} cy={12} r={3} /></svg>
-                                    9.7k
-                                </span>
-                            </div>
-
-                            <div className="flex flex-row items-center gap-2">
-                                <div className="flex flex-row items-center">
-                                    <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                    <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                    <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                    <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                    <img src="/gray-star.png" alt="star" className='w-5 h-5' />
-                                </div>
-                                <span>4.7</span>
-                                <span className='text-sm text-paragraphTextColor'>(156)</span>
-                            </div>
-
-                            <div className="group">
-                                <button className='border border-mainColor rounded-lg py-2 w-full group-hover:bg-mainColor transition-colors ease-in-out duration-500 cursor-pointer'>
-                                    <Link to="/companyDetails" className='text-xl group-hover:text-white transition-colors ease-in-out duration-500'>عرض الشركة</Link>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
 
                 <div className="group">
