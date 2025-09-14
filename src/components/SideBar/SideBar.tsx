@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function SideBar() {
     return (
-        <div className="bg-white w-fit min-h-dvh border-e border-borderColor shadow">
+        <div className="bg-white w-fit lg:w-72 min-h-dvh border-e border-borderColor shadow">
             <div className='flex flex-col gap-5 pt-4'>
                 {/* header */}
                 <div className="flex flex-row items-center gap-4 h-20 border-b border-borderColor pe-4 ps-4 md:ps-8">
