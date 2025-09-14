@@ -15,6 +15,7 @@ import CreateAccount from './pages/CreateAccount/CreateAccount';
 import UserSignUp from './pages/UserSignUp/UserSignUp';
 import UserLogin from './pages/UserLogin/UserLogin';
 import CompanySingUp from './pages/CompanySingUp/CompanySingUp';
+import CompanyLongin from './pages/CompanyLongin/CompanyLongin';
 
 const routes = createBrowserRouter([
   { path: "/", element: <Layouts />, children:[
@@ -30,6 +31,7 @@ const routes = createBrowserRouter([
     { path: "userSignUp", element: <UserSignUp/> },
     { path: "userLogin", element: <UserLogin/> },
     { path: "companySingUp", element: <CompanySingUp/> },
+    { path: "companyLongin", element: <CompanyLongin/> },
   ]} 
 ]);
 function App() {

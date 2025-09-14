@@ -13,7 +13,7 @@ export default function CompanySingUp() {
                 <div className="flex flex-col gap-5 items-center w-full xmd:w-lg lg:w-xl px-4 xmd:px-8 py-8">
                     <form action="" className='w-full'>
                         <header className='text-center'>
-                            {/* <h1 className='text-3xl font-bold text-textColor'>إنشاء حساب شركة</h1> */}
+                            <h1 className='text-3xl font-bold text-textColor'>إنشاء حساب شركة</h1>
                             <p className='text-lg text-paragraphTextColor'>سجّل شركتك خلال دقائق وابدأ استقبال طلبات العملاء</p>
                         </header>
 
@@ -134,7 +134,7 @@ export default function CompanySingUp() {
                         <button type='submit' className='bg-mainColor text-center text-white rounded-lg w-full py-2 mt-4'>إنشاء حساب</button>
                     </form>
 
-                    <Link to="/userLogin" className='text-mainColor'> <span className='text-textColor'>لديك حساب؟</span>تسجيل الدخول </Link>
+                    <Link to="/companyLongin" className='text-mainColor'> <span className='text-textColor'>لديك حساب؟</span>تسجيل الدخول </Link>
                 </div>
             </div>
         </div>
