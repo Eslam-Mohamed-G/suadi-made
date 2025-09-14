@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import mainPhoto from '../../assets/logo/main-photo.webp';
 import campanyImg from '../../assets/images/campany-img.webp';
+import FeaturedCategories from '../../components/FeaturedCategories/FeaturedCategories';
 
 export default function Home() {
     return (
@@ -77,131 +78,14 @@ export default function Home() {
 
                 <div className="flex flex-col gap-4 items-center justify-center">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 grid-rows-2 gap-4 w-full">
-                        <div className="group">
-                            <div className="border border-mainColor rounded-lg py-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
-                                <div className="flex flex-col gap-2 justify-center items-center">
-                                    <div className="rounded-full w-20 h-20 bg-mainColor group-hover:bg-white flex items-center justify-center transition-colors ease-in-out duration-500">
-                                        {/* <img src="/home-icons/Buildings.svg" alt="" className='text-white group-hover:text-mainColor transition-colors duration-500' /> */}
-                                        <svg xmlns="http://www.w3.org/2000/svg" width={40} height={40} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-mainColor transition-colors ease-in-out duration-500"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /><path d="M15 18H9" /><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" /><circle cx={17} cy={18} r={2} /><circle cx={7} cy={18} r={2} /></svg>
-                                    </div>
-
-                                    <div className="flex flex-col items-center justify-center gap-1 text-textColor group-hover:text-white transition-colors ease-in-out duration-500">
-                                        <span className=' text-xl font-bold'>الخدمات اللوجستية</span>
-                                        <span className='font-medium'>شركة + 650</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="group">
-                            <div className="border border-mainColor rounded-lg py-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
-                                <div className="flex flex-col gap-2 justify-center items-center">
-                                    <div className="rounded-full w-20 h-20 bg-mainColor group-hover:bg-white flex items-center justify-center transition-colors ease-in-out duration-500">
-                                        <img src="/home-icons/Buildings.svg" alt="" className='text-white group-hover:text-mainColor transition-colors duration-500' />
-                                    </div>
-
-                                    <div className="flex flex-col items-center justify-center gap-1 text-textColor group-hover:text-white transition-colors ease-in-out duration-500">
-                                        <span className=' text-xl font-bold'>العقارات</span>
-                                        <span className='font-medium'>شركة + 650</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="group">
-                            <div className="border border-mainColor rounded-lg py-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
-                                <div className="flex flex-col gap-2 justify-center items-center">
-                                    <div className="rounded-full w-20 h-20 bg-mainColor group-hover:bg-white flex items-center justify-center transition-colors ease-in-out duration-500">
-                                        {/* <img src="/home-icons/Buildings.svg" alt="" className='text-white group-hover:text-mainColor transition-colors duration-500' /> */}
-                                        <svg xmlns="http://www.w3.org/2000/svg" width={40} height={40} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-mainColor transition-colors ease-in-out duration-500"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" /><path d="M7 2v20" /><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" /></svg>
-                                    </div>
-
-                                    <div className="flex flex-col items-center justify-center gap-1 text-textColor group-hover:text-white transition-colors ease-in-out duration-500">
-                                        <span className=' text-xl font-bold'>الأغذية والمشروبات</span>
-                                        <span className='font-medium'>شركة + 650</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="group">
-                            <div className="border border-mainColor rounded-lg py-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
-                                <div className="flex flex-col gap-2 justify-center items-center">
-                                    <div className="rounded-full w-20 h-20 bg-mainColor group-hover:bg-white flex items-center justify-center transition-colors ease-in-out duration-500">
-                                        <img src="/home-icons/Buildings.svg" alt="" className='text-white group-hover:text-mainColor transition-colors duration-500' />
-                                    </div>
-
-                                    <div className="flex flex-col items-center justify-center gap-1 text-textColor group-hover:text-white transition-colors ease-in-out duration-500">
-                                        <span className=' text-xl font-bold'>البناء والتشييد</span>
-                                        <span className='font-medium'>شركة + 650</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="group">
-                            <div className="border border-mainColor rounded-lg py-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
-                                <div className="flex flex-col gap-2 justify-center items-center">
-                                    <div className="rounded-full w-20 h-20 bg-mainColor group-hover:bg-white flex items-center justify-center transition-colors ease-in-out duration-500">
-                                        {/* <img src="/home-icons/Buildings.svg" alt="" className='text-white group-hover:text-mainColor transition-colors duration-500' /> */}
-                                        <svg xmlns="http://www.w3.org/2000/svg" width={40} height={40} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-mainColor transition-colors ease-in-out duration-500"><path d="m17 2-5 5-5-5" /><rect width={20} height={15} x={2} y={7} rx={2} /></svg>
-                                    </div>
-
-                                    <div className="flex flex-col items-center justify-center gap-1 text-textColor group-hover:text-white transition-colors ease-in-out duration-500">
-                                        <span className=' text-xl font-bold'>الإعلام</span>
-                                        <span className='font-medium'>شركة + 650</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="group">
-                            <div className="border border-mainColor rounded-lg py-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
-                                <div className="flex flex-col gap-2 justify-center items-center">
-                                    <div className="rounded-full w-20 h-20 bg-mainColor group-hover:bg-white flex items-center justify-center transition-colors ease-in-out duration-500">
-                                        {/* <img src="/home-icons/Buildings.svg" alt="" className='text-white group-hover:text-mainColor transition-colors duration-500' /> */}
-                                        <svg xmlns="http://www.w3.org/2000/svg" width={40} height={40} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-mainColor transition-colors ease-in-out duration-500"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /></svg>
-                                    </div>
-
-                                    <div className="flex flex-col items-center justify-center gap-1 text-textColor group-hover:text-white transition-colors ease-in-out duration-500">
-                                        <span className=' text-xl font-bold'>الرعاية الصحية</span>
-                                        <span className='font-medium'>شركة + 650</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="group">
-                            <div className="border border-mainColor rounded-lg py-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
-                                <div className="flex flex-col gap-2 justify-center items-center">
-                                    <div className="rounded-full w-20 h-20 bg-mainColor group-hover:bg-white flex items-center justify-center transition-colors ease-in-out duration-500">
-                                        {/* <img src="/home-icons/Buildings.svg" alt="" className='text-white group-hover:text-mainColor transition-colors duration-500' /> */}
-                                        <svg xmlns="http://www.w3.org/2000/svg" width={40} height={40} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-mainColor transition-colors ease-in-out duration-500"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg>
-                                    </div>
-
-                                    <div className="flex flex-col items-center justify-center gap-1 text-textColor group-hover:text-white transition-colors ease-in-out duration-500">
-                                        <span className=' text-xl font-bold'>التعليم</span>
-                                        <span className='font-medium'>شركة + 650</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="group">
-                            <div className="border border-mainColor rounded-lg py-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
-                                <div className="flex flex-col gap-2 justify-center items-center">
-                                    <div className="rounded-full w-20 h-20 bg-mainColor group-hover:bg-white flex items-center justify-center transition-colors ease-in-out duration-500">
-                                        {/* <img src="/home-icons/Buildings.svg" alt="" className='text-white group-hover:text-mainColor transition-colors duration-500' /> */}
-                                        <svg xmlns="http://www.w3.org/2000/svg" width={40} height={40} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-mainColor transition-colors ease-in-out duration-500"><rect width={20} height={14} x={2} y={3} rx={2} /><line x1={8} x2={16} y1={21} y2={21} /><line x1={12} x2={12} y1={17} y2={21} /></svg>
-                                    </div>
-
-                                    <div className="flex flex-col items-center justify-center gap-1 text-textColor group-hover:text-white transition-colors ease-in-out duration-500">
-                                        <span className=' text-xl font-bold'>التكنولوجيا</span>
-                                        <span className='font-medium'>شركة + 650</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <FeaturedCategories header='الخدمات اللوجستية' text='شركة + 650' img='/home-icons/truck.svg'/>
+                        <FeaturedCategories header='العقارات' text='شركة + 650' img='/home-icons/Buildings.svg'/>
+                        <FeaturedCategories header='الأغذية والمشروبات' text='شركة + 650' img='/home-icons/utensils.svg'/>
+                        <FeaturedCategories header='البناء والتشييد' text='شركة + 650' img='/home-icons/Windmill.svg'/>
+                        <FeaturedCategories header='الإعلام' text='شركة + 650' img='/home-icons/tv.svg'/>
+                        <FeaturedCategories header='الرعاية الصحية' text='شركة + 650' img='/home-icons/heart.svg'/>
+                        <FeaturedCategories header='التعليم' text='شركة + 650' img='/home-icons/graduation-cap.svg'/>
+                        <FeaturedCategories header='التكنولوجيا' text='شركة + 650' img='/home-icons/monitor.svg'/>
                     </div>
 
                     <div className="group">
