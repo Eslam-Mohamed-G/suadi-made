@@ -7,7 +7,7 @@ export default function SideBar() {
         <div className="bg-white w-fit min-h-dvh border-e border-borderColor shadow">
             <div className='flex flex-col gap-5 pt-4'>
                 {/* header */}
-                <div className="flex flex-row items-center gap-4 border-b border-borderColor pe-4 ps-4 md:ps-8 pt-4">
+                <div className="flex flex-row items-center gap-4 h-20 border-b border-borderColor pe-4 ps-4 md:ps-8">
                     <div className="w-14 h-14 rounded-full overflow-hidden">
                         <img src={personPhoto} loading='lazy' alt="Photo by James Barr" className='w-full h-full object-contain' />
                     </div>
@@ -51,7 +51,7 @@ export default function SideBar() {
                 </div>
 
                 {/* setting */}
-                <div className="ps-2 md:ps-6 lg:ps-10 pe-2 pb-4 border-b border-borderColor">
+                <div className="ps-2 md:ps-6 pe-2 pb-4 border-b border-borderColor">
                     <ul className='flex flex-col gap-2 text-paragraphTextColor'>
                         <li className='group'>
                             <Link to="/userProfile" className='flex flex-row gap-2 items-center w-full p-2 rounded-lg font-bold text-lg group-hover:bg-mainColor group-hover:text-white cursor-pointer transition-colors ease-in-out duration-500'>
