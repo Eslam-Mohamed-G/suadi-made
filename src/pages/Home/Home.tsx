@@ -1,10 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import mainPhoto from '../../assets/logo/main-photo.webp';
+import campanyImg from '../../assets/images/campany-img.webp';
 
 export default function Home() {
     return (
         <main className='flex flex-col gap-16'>
-            <section className="relative h-[85dvh] bg-cover bg-fixed bg-center bg-no-repeat" style={{ backgroundImage: 'url("/main-photo.png")' }}>
+            <section className="relative h-[85dvh] bg-cover bg-fixed bg-center bg-no-repeat" style={{ backgroundImage: `url(${mainPhoto})` }}>
                 <div className="relative z-10 flex flex-col items-center justify-center h-full gap-12">
                     <div className="text-white leading-16">
                         <h1 className="text-white text-4xl md:text-6xl font-bold flex flex-col text-center">
@@ -267,7 +269,7 @@ export default function Home() {
                         <header className="flex flex-row gap-2 items-center">
                             {/* img */}
                             <div className="w-40 h-40">
-                                <img src="/campany-img.png" alt="campany-img" className='w-full' />
+                                <img src={campanyImg} alt="campany-img" loading='lazy' className='w-full' />
                             </div>
                             <div className="flex flex-col gap-2">
                                 <h3 className='text-xl flex flex-row items-center justify-between'>لوجيستك الخليج <img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4' /></h3>
