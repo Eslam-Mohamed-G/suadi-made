@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import logoEnd from '../../assets/logo/min-logo-end.webp'
+import logoStart from '../../assets/logo/min-logo.webp'
 type propsType = {
     header: string;
     text: string;
@@ -9,7 +11,7 @@ export default function GreenAuthenticator({header, text}: propsType) {
         <div className='bg-mainColor h-full relative flex pb-4 xmd:pt-16 px-4 xmd:px-8'>
             {/* logo */}
             <div className="w-28 h-28 absolute end-0 top-0">
-                <img src="/min-logo-end.png" alt="min-logo-end" className="w-full object-contain" />
+                <img src={logoEnd} loading='lazy' alt="min-logo-end" className="w-full object-contain" />
             </div>
 
             <div className="text-white text-center xmd:text-start flex flex-col items-center xmd:items-start w-full">
@@ -37,7 +39,7 @@ export default function GreenAuthenticator({header, text}: propsType) {
 
             {/* logo */}
             <div className="w-32 h-32 absolute start-0 bottom-6">
-                <img src="/min-logo.png" alt="min-logo" className="w-full object-contain" />
+                <img src={logoStart} loading='lazy' alt="min-logo" className="w-full object-contain" />
             </div>
         </div>
     )
