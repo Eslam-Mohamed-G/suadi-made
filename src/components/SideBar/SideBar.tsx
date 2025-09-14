@@ -27,7 +27,7 @@ export default function SideBar() {
                             </Link>
                         </li>
                         <li className='group'>
-                            <Link to="/userProfile" className='flex flex-row gap-2 items-center justify-between w-full p-2 rounded-lg font-bold text-lg group-hover:bg-mainColor group-hover:text-white transition-colors ease-in-out duration-500'>
+                            <Link to="/userProfile/message" className='flex flex-row gap-2 items-center justify-between w-full p-2 rounded-lg font-bold text-lg group-hover:bg-mainColor group-hover:text-white transition-colors ease-in-out duration-500'>
                                 <div className="flex flex-row gap-2 items-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-circle-icon lucide-message-circle"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
                                     <span>الرسائل</span>
