@@ -20,6 +20,7 @@ import UserProfile from './pages/UserProfile/UserProfile';
 import MainPage from './pages/UserProfile/Page/MainPage';
 import MessagePage from './pages/UserProfile/Page/MessagePage';
 import OrdersPage from './pages/UserProfile/Page/OrdersPage';
+import Location from './pages/UserProfile/Page/Location';
 
 const routes = createBrowserRouter([
   { path: "/", element: <Layouts />, children:[
@@ -38,6 +39,7 @@ const routes = createBrowserRouter([
       {path: "/userProfile/mainPage", element: <MainPage/>},
       {path: "/userProfile/message", element: <MessagePage/>},
       {path: "/userProfile/order", element: <OrdersPage/>},
+      {path: "/userProfile/location", element: <Location/>},
     ] },
     { path: "companySingUp", element: <CompanySingUp/> },
     { path: "companyLongin", element: <CompanyLongin/> },
