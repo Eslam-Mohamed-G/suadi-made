@@ -19,6 +19,7 @@ import CompanyLongin from './pages/CompanyLongin/CompanyLongin';
 import UserProfile from './pages/UserProfile/UserProfile';
 import MainPage from './pages/UserProfile/Page/MainPage';
 import MessagePage from './pages/UserProfile/Page/MessagePage';
+import OrdersPage from './pages/UserProfile/Page/OrdersPage';
 
 const routes = createBrowserRouter([
   { path: "/", element: <Layouts />, children:[
@@ -35,7 +36,8 @@ const routes = createBrowserRouter([
     { path: "userLogin", element: <UserLogin/> },
     { path: "userProfile", element: <UserProfile/>, children:[
       {path: "/userProfile/mainPage", element: <MainPage/>},
-      {path: "/userProfile/message", element: <MessagePage/>}
+      {path: "/userProfile/message", element: <MessagePage/>},
+      {path: "/userProfile/order", element: <OrdersPage/>},
     ] },
     { path: "companySingUp", element: <CompanySingUp/> },
     { path: "companyLongin", element: <CompanyLongin/> },
