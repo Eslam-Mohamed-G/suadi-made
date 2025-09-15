@@ -1,6 +1,13 @@
 import React from 'react'
 import StarRating from './StarRating'
 import { Link } from 'react-router-dom'
+import companyDetailsImg from '../../assets/images/CompanyDetails.webp';
+import applePhone from "../../assets/products/apple-phone.webp";
+import books from "../../assets/products/books.webp";
+import couch from "../../assets/products/couch.webp";
+import electronic from "../../assets/products/electronic.webp";
+import madicen from "../../assets/products/madicen.webp";
+import shopCategory from "../../assets/products/shop-categosfdry-image.webp";
 
 export default function CompanyDetails() {
   return (
@@ -18,8 +25,8 @@ export default function CompanyDetails() {
       <section className='bg-white rounded-2xl border border-borderColor'>
         <div className="flex flex-col md:flex-row gap-5 p-2 md:p-4">
           {/* img */}
-          <div className="w-full md:w-96 h-80 rounded-t-2xl md:rounded-s-2xl overflow-hidden">
-            <img src="/company-details/CompanyDetails.png" alt="company-details" className='w-full h-full object-cover' />
+          <div className="w-full md:w-96 h-80 rounded-t-2xl md:rounded-e-none md:rounded-s-2xl overflow-hidden">
+            <img src={companyDetailsImg} loading='lazy' alt="company-details" className='w-full h-full object-cover' />
           </div>
 
           {/* content */}
@@ -47,15 +54,15 @@ export default function CompanyDetails() {
             <div className="flex flex-col h-full justify-between gap-5">
               <ul className='flex flex-row flex-wrap gap-5'>
                 <li className='flex flex-row gap-1 items-center justify-center text-paragraphTextColor'>
-                  <img src="/company-details/Users.svg" alt="company-details-Users" className='w-4 h-4' />
+                  <img src="/gray-icons/Users.svg" alt="company-details-Users" className='w-4 h-4' />
                   <span>51-200 موظف</span>
                 </li>
                 <li className='flex flex-row gap-1 items-center justify-center text-paragraphTextColor'>
-                  <img src="/company-details/CalendarBlank.svg" alt="company-details-CalendarBlank" className='w-4 h-4' />
+                  <img src="/gray-icons/CalendarBlank.svg" alt="company-details-CalendarBlank" className='w-4 h-4' />
                   <span>متوسط الرد 2 ساعة</span>
                 </li>
                 <li className='flex flex-row gap-1 items-center justify-center text-paragraphTextColor'>
-                  <img src="/company-details/Timer.svg" alt="company-details-Timer" className='w-4 h-4' />
+                  <img src="/gray-icons/Timer.svg" alt="company-details-Timer" className='w-4 h-4' />
                   <span>متوسط الرد 2 ساعة</span>
                 </li>
               </ul>
@@ -73,7 +80,7 @@ export default function CompanyDetails() {
               </div>
 
               <div className="w-fit flex flex-row items-center justify-center gap-1 text-mainColor">
-                <img src="/company-details/MapPin.svg" alt="company-details-MapPin" className='w-4 h-4' />
+                <img src="/gray-icons/MapPin.svg" alt="company-details-MapPin" className='w-4 h-4' />
                 <span className=''>
                   سعودية • الرياض
                 </span>
@@ -86,7 +93,7 @@ export default function CompanyDetails() {
                   <span className='text-white'>طلب خدمة</span>
                 </button>
                 <button className='bg-[#F1F1F1CC] w-28 border border-paragraphTextColor rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
-                  <img src="/company-details/Phone.svg" alt="company-details-Phone" className='w-5 h-5' />
+                  <img src="/gray-icons/Phone.svg" alt="company-details-Phone" className='w-5 h-5' />
                   <span className='text-paragraphTextColor'>اتصال</span>
                 </button>
                 <button className='bg-[#2CC161] w-28 rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
@@ -94,7 +101,7 @@ export default function CompanyDetails() {
                   <span className='text-white'>واتساب</span>
                 </button>
                 <button className='bg-[#F1F1F1CC] w-28 border border-paragraphTextColor rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
-                  <img src="/company-details/Envelope.svg" alt="company-details-Envelope" className='w-5 h-5' />
+                  <img src="/gray-icons/Envelope.svg" alt="company-details-Envelope" className='w-5 h-5' />
                   <span className='text-paragraphTextColor'>إرسال بريد</span>
                 </button>
               </div>
@@ -175,7 +182,7 @@ export default function CompanyDetails() {
                   {/* img */}
                   <div className="w-full bg-gray-100 flex items-center justify-center h-40">
                     <div className="w-40 h-40">
-                      <img src="/products/shop-categosfdry-image.png" alt="shop-categosfdry-image" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
+                      <img src={shopCategory} loading='lazy' alt="shop-categosfdry-image" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
                     </div>
                   </div>
 
@@ -202,7 +209,7 @@ export default function CompanyDetails() {
                   {/* img */}
                   <div className="w-full bg-gray-100 flex items-center justify-center h-40">
                     <div className="w-36 h-36">
-                      <img src="/products/madicen.png" alt="madicen" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
+                      <img src={madicen} loading='lazy' alt="madicen" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
                     </div>
                   </div>
 
@@ -229,7 +236,7 @@ export default function CompanyDetails() {
                   {/* img */}
                   <div className="w-full bg-gray-100 flex items-center justify-center h-40">
                     <div className="w-40 h-40">
-                      <img src="/products/apple-phone.png" alt="apple-phone" className='w-full object-cover group-hover:scale-110 transition-all ease-in-out duration-500' />
+                      <img src={applePhone} loading='lazy' alt="apple-phone" className='w-full object-cover group-hover:scale-110 transition-all ease-in-out duration-500' />
                     </div>
                   </div>
 
@@ -256,7 +263,7 @@ export default function CompanyDetails() {
                   {/* img */}
                   <div className="w-full bg-gray-100 flex items-center justify-center h-40">
                     <div className="w-52 h-52 flex items-center justify-center">
-                      <img src="/products/couch.png" alt="couch" className='w-full object-center group-hover:scale-110 transition-all ease-in-out duration-500' />
+                      <img src={couch} loading='lazy' alt="couch" className='w-full object-center group-hover:scale-110 transition-all ease-in-out duration-500' />
                     </div>
                   </div>
 
@@ -283,7 +290,7 @@ export default function CompanyDetails() {
                   {/* img */}
                   <div className="w-full bg-gray-100 h-40 flex items-center justify-center">
                     <div className="w-40 h-40 flex items-center justify-center">
-                      <img src="/products/electronic.png" alt="electronic" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
+                      <img src={electronic} loading='lazy' alt="electronic" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
                     </div>
                   </div>
 
@@ -310,7 +317,7 @@ export default function CompanyDetails() {
                   {/* img */}
                   <div className="w-full bg-gray-100 flex items-center justify-center h-40">
                     <div className="w-40 h-40 flex items-center justify-center">
-                      <img src="/products/books.png" alt="books" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
+                      <img src={books} loading='lazy' alt="books" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
                     </div>
                   </div>
 

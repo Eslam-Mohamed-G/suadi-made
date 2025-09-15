@@ -9,7 +9,7 @@ import logoStart from '../../assets/logo/min-logo.webp'
 
 export default function Home() {
     return (
-        <main className='flex flex-col gap-16'>
+        <main className='flex flex-col gap-16 pt-18'>
             <section className="relative h-[85dvh] bg-cover bg-fixed bg-center bg-no-repeat" style={{ backgroundImage: `url(${mainPhoto})` }}>
                 <div className="relative z-10 flex flex-col items-center justify-center h-full gap-12">
                     <div className="text-white leading-16">
