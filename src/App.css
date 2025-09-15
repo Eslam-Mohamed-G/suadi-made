@@ -29,3 +29,10 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
 }
+
+.backgroundLinear {
+    background: linear-gradient(to bottom right,
+            #26A151,
+            #1A6C37);
+    color: white;
+}
