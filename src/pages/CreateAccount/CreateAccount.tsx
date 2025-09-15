@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import grayLogo from '../../assets/logo/gray-logo-saudi-made.webp'
 
 export default function CreateAccount() {
   return (
@@ -13,7 +14,7 @@ export default function CreateAccount() {
         {/* logo */}
         <div className="absolute bottom-full end-full">
           <div className="w-40 h-40">
-            <img src="/gray-logo-saudi-made.png" alt="gray-logo-saudi-made" className='w-full h-full object-contain' />
+            <img src={grayLogo} loading='lazy' alt="gray-logo-saudi-made" className='w-full h-full object-contain' />
           </div>
         </div>
 
@@ -50,7 +51,7 @@ export default function CreateAccount() {
         {/* logo */}
         <div className="absolute top-full start-full">
           <div className="w-40 h-40">
-            <img src="/gray-logo-saudi-made.png" alt="gray-logo-saudi-made" className='w-full h-full object-contain' />
+            <img src={grayLogo} loading='lazy' alt="gray-logo-saudi-made" className='w-full h-full object-contain' />
           </div>
         </div>
       </div>
