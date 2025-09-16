@@ -9,8 +9,8 @@ import logoStart from '../../assets/logo/min-logo.webp'
 
 export default function Home() {
     return (
-        <main className='flex flex-col gap-16 pt-18'>
-            <section className="relative h-[85dvh] bg-cover bg-fixed bg-center bg-no-repeat" style={{ backgroundImage: `url(${mainPhoto})` }}>
+        <main className='flex flex-col pt-16'>
+            <section className="relative parallax mt-2">
                 <div className="relative z-10 flex flex-col items-center justify-center h-full gap-12">
                     <div className="text-white leading-16">
                         <h1 className="text-white text-4xl md:text-6xl font-bold flex flex-col text-center">
@@ -73,7 +73,7 @@ export default function Home() {
             </section>
 
             {/* second section */}
-            <section className='flex flex-col justify-center px-4 md:px-8 lg:px-16'>
+            <section className='flex flex-col justify-center px-4 md:px-8 lg:px-16 pt-16'>
                 <header className='text-center'>
                     <h1 className='text-textColor font-bold text-3xl'>الفئات المميزة</h1>
                     <p className='text-paragraphTextColor text-xl leading-16'>استكشف مختلف القطاعات والصناعات في المملكة العربية السعودية</p>
@@ -81,14 +81,14 @@ export default function Home() {
 
                 <div className="flex flex-col gap-4 items-center justify-center">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 grid-rows-2 gap-4 w-full">
-                        <FeaturedCategories header='الخدمات اللوجستية' text='شركة + 650' img='/home-icons/truck.svg' />
-                        <FeaturedCategories header='العقارات' text='شركة + 650' img='/home-icons/Buildings.svg' />
-                        <FeaturedCategories header='الأغذية والمشروبات' text='شركة + 650' img='/home-icons/utensils.svg' />
-                        <FeaturedCategories header='البناء والتشييد' text='شركة + 650' img='/home-icons/Windmill.svg' />
-                        <FeaturedCategories header='الإعلام' text='شركة + 650' img='/home-icons/tv.svg' />
-                        <FeaturedCategories header='الرعاية الصحية' text='شركة + 650' img='/home-icons/heart.svg' />
-                        <FeaturedCategories header='التعليم' text='شركة + 650' img='/home-icons/graduation-cap.svg' />
-                        <FeaturedCategories header='التكنولوجيا' text='شركة + 650' img='/home-icons/monitor.svg' />
+                        <FeaturedCategories header='الخدمات اللوجستية' text='شركة + 650' img='Truck.svg' />
+                        <FeaturedCategories header='العقارات' text='شركة + 650' img='bulding.svg' />
+                        <FeaturedCategories header='الأغذية والمشروبات' text='شركة + 650' img='ForkKnife.svg' />
+                        <FeaturedCategories header='البناء والتشييد' text='شركة + 650' img='Windmill.svg' />
+                        <FeaturedCategories header='الإعلام' text='شركة + 650' img='TelevisionSimple.svg' />
+                        <FeaturedCategories header='الرعاية الصحية' text='شركة + 650' img='Heart.svg' />
+                        <FeaturedCategories header='التعليم' text='شركة + 650' img='GraduationCap.svg' />
+                        <FeaturedCategories header='التكنولوجيا' text='شركة + 650' img='Desktop.svg' />
                     </div>
 
                     <div className="group">
@@ -100,7 +100,7 @@ export default function Home() {
             </section>
 
             {/* third section */}
-            <section className='flex flex-col items-center justify-center gap-5 px-4 md:px-8 lg:px-16'>
+            <section className='flex flex-col items-center justify-center gap-5 px-4 md:px-8 lg:px-16 pt-16'>
                 <header className='text-center'>
                     <h1 className='text-textColor font-bold text-3xl'>الشركات المميزة</h1>
                     <p className='text-paragraphTextColor text-xl leading-16'>اكتشف أفضل الشركات الموثقة والمعتمدة في المملكة العربية السعودية</p>
@@ -115,7 +115,7 @@ export default function Home() {
                                     <img src={campanyImg} alt="campany-img" loading='lazy' className='w-full' />
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                    <h3 className='text-xl flex flex-row items-center justify-between'>لوجيستك الخليج <img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4' /></h3>
+                                    <h3 className='text-xl flex flex-row items-center justify-between'>لوجيستك الخليج <img src="/CheckCircle.png" alt="CheckCircle" className='w-5 h-5 mt-1.5' /></h3>
                                     <span className='bg-secondaryColor text-white rounded-2xl px-3 py-2'>الخدمات اللوجيستية</span>
                                 </div>
                             </header>
@@ -135,10 +135,10 @@ export default function Home() {
 
                                 <div className="flex flex-row items-center gap-2">
                                     <div className="flex flex-row items-center">
-                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
+                                        <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
+                                        <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
+                                        <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
+                                        <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
                                         <img src="/gray-star.png" alt="star" className='w-5 h-5' />
                                     </div>
                                     <span>4.7</span>
@@ -163,7 +163,7 @@ export default function Home() {
             </section>
 
             {/* four section */}
-            <section className='bg-gray-100 px-4 md:px-8 lg:px-16 py-14'>
+            <section className='bg-gray-100 px-4 md:px-8 lg:px-16 py-14 mt-16'>
                 <header className='text-center'>
                     <h1 className='text-textColor font-bold text-3xl'>كيف يعمل الموقع؟</h1>
                     <p className='text-paragraphTextColor text-xl leading-16'>ثلاث خطوات بسيطة للعثور على الشركة المناسبة وطلب الخدمة</p>
@@ -175,10 +175,9 @@ export default function Home() {
                     <div className="flex flex-col items-center justify-center gap-5">
                         <div className="bg-mainColor w-10 h-10 text-white text-2xl font-medium rounded-full text-center content-center">1</div>
                         <div className="group w-full">
-                            <div className="flex flex-col border border-mainColor rounded-lg py-5 px-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
+                            <div className="flex flex-col border border-mainColor rounded-lg p-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
                                 <div className="flex flex-col gap-2 justify-center items-center">
                                     <div className="rounded-full w-20 h-20 bg-mainColor group-hover:bg-white flex items-center justify-center transition-colors ease-in-out duration-500">
-                                        {/* <img src="/home-icons/Buildings.svg" alt="" className='text-white group-hover:text-mainColor transition-colors duration-500' /> */}
                                         <svg xmlns="http://www.w3.org/2000/svg" width={40} height={40} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-mainColor transition-colors ease-in-out duration-500"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" /></svg>
                                     </div>
 
@@ -196,7 +195,7 @@ export default function Home() {
                     <div className="flex flex-col items-center justify-center gap-5">
                         <div className="bg-mainColor w-10 h-10 text-white text-2xl font-medium rounded-full text-center content-center">2</div>
                         <div className="group w-full">
-                            <div className="border border-mainColor rounded-lg  pt-5 px-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
+                            <div className="border border-mainColor rounded-lg p-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
                                 <div className="flex flex-col gap-2 justify-center items-center">
                                     <div className="rounded-full w-20 h-20 bg-mainColor group-hover:bg-white flex items-center justify-center transition-colors ease-in-out duration-500">
                                         <svg xmlns="http://www.w3.org/2000/svg" width={40} height={40} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-mainColor transition-colors ease-in-out duration-500"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx={12} cy={12} r={3} /></svg>
@@ -215,7 +214,7 @@ export default function Home() {
                     <div className="flex flex-col items-center justify-center gap-5">
                         <div className="bg-mainColor w-10 h-10 text-white text-2xl font-medium rounded-full text-center content-center">3</div>
                         <div className="group w-full">
-                            <div className="border border-mainColor rounded-lg pt-5 px-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
+                            <div className="border border-mainColor rounded-lg p-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
                                 <div className="flex flex-col gap-2 justify-center items-center">
                                     <div className="rounded-full w-20 h-20 bg-mainColor group-hover:bg-white flex items-center justify-center transition-colors ease-in-out duration-500">
                                         <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-mainColor transition-colors ease-in-out duration-500"><path d="m21 21-4.34-4.34" /><circle cx={11} cy={11} r={8} /></svg>
@@ -223,7 +222,7 @@ export default function Home() {
 
                                     <div className="flex flex-col items-center justify-center gap-1 text-textColor group-hover:text-white transition-colors ease-in-out duration-500">
                                         <span className='text-xl font-bold'>تصفح الشركات</span>
-                                        <span className='font-medium max-w-2xs text-center'>ابحث عن الشركات المناسبة لاحتياجاتك من خلال الفئات المختلفة أو استخدم خاصية البحث المتقدم</span>
+                                        <span className='font-medium max-w-80 text-center'>ابحث عن الشركات المناسبة لاحتياجاتك من خلال الفئات المختلفة أو استخدم خاصية البحث المتقدم</span>
                                     </div>
                                 </div>
                             </div>
@@ -273,7 +272,7 @@ export default function Home() {
             </section>
 
             {/* sex section */}
-            <section>
+            <section className='pt-16'>
                 {/* green div */}
                 <div className="bg-mainColor relative z-10 py-16 px-4 md:px-8 lg:px-16 flex flex-row items-center justify-center overflow-hidden">
                     <div className="w-32 h-32 absolute start-0 bottom-6">
@@ -289,19 +288,19 @@ export default function Home() {
                         {/* buttons */}
                         <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-2 justify-center gap-5">
                             <button className='bg-white/30 text-white md:w-60 lg:w-2xs py-4 rounded-lg text-center cursor-pointer flex flex-row items-center justify-center gap-2'>
-                                <img src="/products/Users.png" alt="Users" className='w-4 h-4' />
+                                <img src="/gold-img/Users.png" alt="Users" className='w-5 h-5 mt-1' />
                                 <span className='text-lg'>عملاء جدد يومياً</span>
                             </button>
                             <button className='bg-white/30 text-white md:w-60 lg:w-2xs py-4 rounded-lg text-center cursor-pointer flex flex-row items-center justify-center gap-2'>
-                                <img src="/products/star.png" alt="star" className='w-4 h-4' />
+                                <img src="/gold-img/star.png" alt="star" className='w-5 h-5 mt-1' />
                                 <span className='text-lg'>تقييمات العملاء</span>
                             </button>
                             <button className='bg-white/30 text-white md:w-60 lg:w-2xs py-4 rounded-lg text-center cursor-pointer flex flex-row items-center justify-center gap-2'>
-                                <img src="/products/CheckCircle.png" alt="CheckCircle" className='w-4 h-4' />
+                                <img src="/gold-img/CheckCircle.png" alt="CheckCircle" className='w-5 h-5 mt-1' />
                                 <span className='text-lg'>ملف تجاري شامل</span>
                             </button>
                             <button className='bg-white text-mainColor md:w-60 lg:w-2xs py-4 flex flex-row gap-2 items-center justify-center rounded-lg text-center cursor-pointer md:col-span-3 md:mx-auto'>
-                                <img src="/products/Plus.png" alt="Plus" className='w-5 h-5' />
+                                <img src="Plus.png" alt="Plus" className='w-5 h-5 mt-1' />
                                 <span className='text-lg'>سجل شركتك مجانا</span>
                             </button>
                         </div>

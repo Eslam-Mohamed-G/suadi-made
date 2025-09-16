@@ -105,7 +105,7 @@ export default function Compaines() {
                                     <img src={companyImg} loading='lazy' alt="campany-img" className='w-full' />
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                    <h3 className='text-xl md:text-3xl font-bold flex flex-row items-center gap-2'>شركة البناء المتقدم<img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4 mt-1' /></h3>
+                                    <h3 className='text-xl md:text-2xl text-textColor font-bold flex flex-row items-center gap-2'>شركة البناء المتقدم<img src="/CheckCircle.png" alt="CheckCircle" className='w-5 h-5 mt-1' /></h3>
                                     <span className='bg-secondaryColor text-white w-fit rounded-4xl px-4 py-2'>الخدمات اللوجيستية</span>
                                 </div>
                             </header>
