@@ -7,7 +7,7 @@ export default function Layouts() {
   const location = useLocation();
   return (
     <div className="">
-      <nav className={`fixed top-0 start-0 end-0 z-50 bg-white ${location.pathname === "/userProfile" || location.pathname === "/userProfile/mainPage" || location.pathname === "/userProfile/message" || location.pathname === "/userProfile/order" || location.pathname === "/userProfile/location" ? "hidden" : "block"}`}>
+      <nav className={`fixed top-0 start-0 end-0 z-50 bg-white ${location.pathname === "/userProfile/mainPage" || location.pathname === "/userProfile/message" || location.pathname === "/userProfile/order" || location.pathname === "/userProfile/location" || location.pathname === "/userProfile/profileSettings" ? "hidden" : "block"}`}>
         <Navbar />
       </nav>
 
