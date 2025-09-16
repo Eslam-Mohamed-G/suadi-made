@@ -12,10 +12,10 @@ export default function Home() {
         <main className='flex flex-col pt-16'>
             <section className="relative parallax mt-2">
                 <div className="relative z-10 flex flex-col items-center justify-center h-full gap-12">
-                    <div className="text-white leading-16">
+                    <div className="text-white">
                         <h1 className="text-white text-4xl md:text-6xl font-bold flex flex-col text-center">
                             <span className='tracking-tight'>مرحباً بك في صناعة سعودية</span>
-                            <span className='text-secondaryTextColor leading-20'>دليل الأعمال السعـودي الرائد</span>
+                            <span className='text-secondaryTextColor leading-24'>دليل الأعمال السعـودي الرائد</span>
                         </h1>
                         <p className='text-center text-4xl pt-3'>اكتشف الشركات الموثوقة، اطلب الخدمات، ووسع شبكة علاقاتك التجارية</p>
                     </div>

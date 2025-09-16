@@ -15,7 +15,7 @@ export default function MainPage() {
                         <p className='text-lg'>مرحباً بك في لوحة التحكم الخاصة بك</p>
                     </div>
 
-                    <div className="w-12 h-12 rounded-full bg-[#6EAF8599] flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-lightseagreen flex items-center justify-center">
                         <img src="/userProfile/TrendUp.svg" alt="TrendUp" loading='lazy' className='w-7 h-7' />
                     </div>
                 </div>

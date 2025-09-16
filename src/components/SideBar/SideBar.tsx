@@ -12,8 +12,8 @@ export default function SideBar() {
                         <img src={personPhoto} loading='lazy' alt="Photo by James Barr" className='w-full h-full object-contain' />
                     </div>
                     <header>
-                        <h1 className='text-xl text-paragraphTextColor'>أهلا</h1>
-                        <p className='text-2xl text-textColor'>احمد عمر ماهر</p>
+                        <h1 className='text-lg text-paragraphTextColor'>أهلا</h1>
+                        <p className='text-lg font-bold text-textColor'>احمد عمر ماهر</p>
                     </header>
                 </div>
 

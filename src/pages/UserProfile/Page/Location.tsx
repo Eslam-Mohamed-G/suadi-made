@@ -20,7 +20,7 @@ export default function Location() {
             </header>
 
             <main className='flex flex-row flex-wrap justify-around p-4 md:p-8 gap-10'>
-                <div className="bg-white border border-mainColor rounded-lg p-4 flex flex-row items-center gap-5 max-w-96">
+                <div className="bg-white border border-mainColor rounded-lg p-4 flex flex-row items-center gap-5 max-w-96 lg:max-w-lg">
                     <div className="flex flex-row items-center gap-2">
                         <div className="w-14 h-14 bg-secondBackGroundColor text-mainColor rounded-full flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="mb-1"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg>
@@ -44,7 +44,7 @@ export default function Location() {
                     </div>
                 </div>
 
-                <div className="bg-white border border-borderColor rounded-lg p-4 flex flex-col gap-4 max-w-96">
+                <div className="bg-white border border-borderColor rounded-lg p-4 flex flex-col gap-4 max-w-96 lg:max-w-lg">
                     <div className="flex flex-row items-center gap-5">
                         <div className="flex flex-row gap-2 items-center">
                             <div className="w-14 h-14 bg-secondBackGroundColor text-mainColor rounded-full flex items-center justify-center">
