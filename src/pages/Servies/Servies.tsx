@@ -131,10 +131,10 @@ export default function Servies() {
 
                                 <div className="flex flex-row items-center gap-2">
                                     <div className="flex flex-row items-center">
-                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
+                                        <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
+                                        <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
+                                        <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
+                                        <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
                                         <img src="/gray-star.png" alt="star" className='w-5 h-5' />
                                     </div>
                                     <span>4.7</span>

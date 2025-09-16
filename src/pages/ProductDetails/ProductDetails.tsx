@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import StarRating from '../CompanyDetails/StarRating';
 import { Link } from 'react-router-dom';
 import ProductCard, { products } from '../../components/ProductCard/ProductCard';
+import shopCategosfdry from '../../assets/products/shop-categosfdry-image.webp'
+import companyImg from '../../assets/images/campany-img.webp'
 
 export default function ProductDetails() {
     const [activeTab, setActiveTab] = useState("description");
@@ -23,7 +25,7 @@ export default function ProductDetails() {
                 {/* img */}
                 <div className="w-full bg-gray-100 flex items-center justify-center sm:w-72 sm:h-72 md:w-md lg:w-lg h-64 md:h-96 rounded-2xl">
                     <div className="w-52 h-52">
-                        <img src="/products/shop-categosfdry-image.png" alt="shop-categosfdry-image" className='w-full object-contain transition-all ease-in-out duration-500' />
+                        <img src={shopCategosfdry} loading='lazy' alt="shop-categosfdry-image" className='w-full object-contain transition-all ease-in-out duration-500' />
                     </div>
                 </div>
                 {/* information */}
@@ -33,16 +35,16 @@ export default function ProductDetails() {
                     </header>
 
                     <div className="bg-secondBackGroundColor flex items-center justify-center gap-1 w-fit rounded-2xl px-2 py-1">
-                        <img src="/products/Buildings.png" alt="Buildings" className='text-white' />
+                        <img src="/company-details/green-icons/Buildings.svg" alt="Buildings" className='w-5 h-5 font-bold' />
                         <span className='text-mainColor'>شركة مصنع الغذاء الطبيعي</span>
                     </div>
 
                     <div className="flex flex-row items-center gap-2">
                         <div className="flex flex-row items-center">
-                            <img src="/Star.png" alt="star" className='w-5 h-5' />
-                            <img src="/Star.png" alt="star" className='w-5 h-5' />
-                            <img src="/Star.png" alt="star" className='w-5 h-5' />
-                            <img src="/Star.png" alt="star" className='w-5 h-5' />
+                            <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
+                            <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
+                            <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
+                            <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
                             <img src="/gray-star.png" alt="star" className='w-5 h-5' />
                         </div>
                         <span>4.7</span>
@@ -98,8 +100,8 @@ export default function ProductDetails() {
                     {/* about campany */}
                     {activeTab === "about" && <div className="flex flex-col sm:flex-row gap-4 bg-white border border-borderColor shadow rounded-2xl p-4">
                         {/* img */}
-                        <div className="w-full h-56 sm:w-72 sm:h-72 rounded-t-2xl sm:rounded-t-none sm:rounded-r-2xl overflow-hidden">
-                            <img src="/company-details/CompanyDetails.png" alt="campany-img" className='w-full h-full object-cover' />
+                        <div className="w-full h-56 sm:w-64 sm:h-64 rounded-t-2xl sm:rounded-t-none sm:rounded-r-2xl overflow-hidden">
+                            <img src={companyImg} loading='lazy' alt="campany-img" className='w-full h-full object-center' />
                         </div>
 
                         {/* informaiton */}

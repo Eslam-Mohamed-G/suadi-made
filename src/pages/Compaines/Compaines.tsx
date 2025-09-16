@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import companyImg from '../../assets/images/campany-img.webp'
 
 export default function Compaines() {
     return (
-        <div className="pt-8">
+        <div className="pt-16">
             <section className='bg-gray-100 px-4 md:px-8 lg:px-16 py-10 flex flex-col items-center justify-center gap-6'>
                 <header className='text-center'>
                     <h1 className='text-textColor font-bold text-4xl'>تصفية النتائج</h1>
@@ -62,7 +63,7 @@ export default function Compaines() {
 
                     <div className="flex flex-col md:flex-row gap-8 justify-between items-center w-full">
                         <div className="">
-                            <span className='bg-secondBackGroundColor rounded-2xl px-4 py-2'>تم العثور على 12شركة</span>
+                            <span className='bg-secondBackGroundColor rounded-2xl px-4 py-2'>تم العثور على 12 شركة</span>
                         </div>
 
                         <div className="flex flex-row items-center justify-between w-full md:w-fit gap-4">
@@ -101,10 +102,10 @@ export default function Compaines() {
                             <header className="flex flex-row gap-2 items-center">
                                 {/* img */}
                                 <div className="w-36 h-36 md:w-40 md:h-40">
-                                    <img src="/campany-img.png" alt="campany-img" className='w-full' />
+                                    <img src={companyImg} loading='lazy' alt="campany-img" className='w-full' />
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                    <h3 className='text-xl md:text-3xl font-bold flex flex-row items-center gap-2'>شركة البناء المتقدم<img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4' /></h3>
+                                    <h3 className='text-xl md:text-3xl font-bold flex flex-row items-center gap-2'>شركة البناء المتقدم<img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4 mt-1' /></h3>
                                     <span className='bg-secondaryColor text-white w-fit rounded-4xl px-4 py-2'>الخدمات اللوجيستية</span>
                                 </div>
                             </header>
@@ -124,10 +125,10 @@ export default function Compaines() {
 
                                 <div className="flex flex-row items-center gap-2">
                                     <div className="flex flex-row items-center">
-                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
-                                        <img src="/Star.png" alt="star" className='w-5 h-5' />
+                                        <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
+                                        <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
+                                        <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
+                                        <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
                                         <img src="/gray-star.png" alt="star" className='w-5 h-5' />
                                     </div>
                                     <span>4.7</span>
@@ -156,43 +157,6 @@ export default function Compaines() {
                         </div>
                     ))}
                 </div>
-                
-                <nav aria-label="Page navigation example" className='flex items-center justify-center mt-5'>
-                    <ul className="flex items-center -space-x-px h-10 text-base mx-auto">
-                        <li>
-                            <a href="#" className="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                                <span className="sr-only">Previous</span>
-
-                                <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m1 9 4-4-4-4" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
-                        </li>
-                        <li>
-                            <a href="#" className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
-                        </li>
-                        <li>
-                            <a href="#" aria-current="page" className="z-10 flex items-center justify-center px-4 h-10 leading-tight text-white bg-mainColor border border-mainColor hover:bg-mainColor hover:text-white dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
-                        </li>
-                        <li>
-                            <a href="#" className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
-                        </li>
-                        <li>
-                            <a href="#" className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
-                        </li>
-                        <li>
-                            <a href="#" className="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                                <span className="sr-only">Next</span>
-                                <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 1 1 5l4 4" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
             </section>
         </div>
     )
