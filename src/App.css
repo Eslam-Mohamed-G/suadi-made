@@ -14,11 +14,13 @@
     --breakpoint-xlg: 1050px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+
 /* src/index.css أو App.css */
 body {
     direction: rtl;
     text-align: right;
-    font-family: 'Cairo' sans-serif;
+    font-family: 'Tajawal', 'sans-serif';
 }  
 
 .star-rating {

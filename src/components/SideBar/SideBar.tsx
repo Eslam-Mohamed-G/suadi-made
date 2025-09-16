@@ -18,11 +18,11 @@ export default function SideBar() {
                 </div>
 
                 {/* tabs */}
-                <div className="ps-2 md:ps-6 pe-2 pb-4 border-b border-borderColor">
+                <div className="ps-2 md:ps-4 pe-2 pb-4 border-b border-borderColor">
                     <ul className='flex flex-col gap-2 text-paragraphTextColor'>
                         <li className='group'>
                             <NavLink to="/userProfile/mainPage" className={({ isActive }) => `${ isActive? "bg-mainColor text-white": "bg-white"} flex flex-row gap-2 items-center w-full p-2 rounded-lg font-bold text-lg group-hover:bg-mainColor group-hover:text-white cursor-pointer transition-colors ease-in-out duration-500`}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="mb-1"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="mt-1"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg>
                                 <span>الرئيسية</span>
                             </NavLink>
                         </li>
@@ -37,13 +37,13 @@ export default function SideBar() {
                         </li>
                         <li className='group'>
                             <NavLink to="/userProfile/order" className={({ isActive }) => `${ isActive? "bg-mainColor text-white": "bg-white"} flex flex-row gap-2 items-center w-full p-2 rounded-lg font-bold text-lg group-hover:bg-mainColor group-hover:text-white cursor-pointer transition-colors ease-in-out duration-500`}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-box-icon lucide-box"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" /><path d="m3.3 7 8.7 5 8.7-5" /><path d="M12 22V12" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-box-icon lucide-box mt-1"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" /><path d="m3.3 7 8.7 5 8.7-5" /><path d="M12 22V12" /></svg>
                                 <span>طلباتي</span>
                             </NavLink>
                         </li>
                         <li className='group'>
                             <NavLink to="/userProfile/location" className={({ isActive }) => `${ isActive? "bg-mainColor text-white": "bg-white"} flex flex-row gap-2 items-center w-full p-2 rounded-lg font-bold text-lg group-hover:bg-mainColor group-hover:text-white cursor-pointer transition-colors ease-in-out duration-500`}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx={12} cy={10} r={3} /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-map-pin-icon lucide-map-pin mt-1"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx={12} cy={10} r={3} /></svg>
                                 <span>عناويني</span>
                             </NavLink>
                         </li>
@@ -55,15 +55,15 @@ export default function SideBar() {
                     <ul className='flex flex-col gap-2 text-paragraphTextColor'>
                         <li className='group'>
                             <NavLink to="/userProfile/profileSettings" className={({ isActive }) => `${ isActive? "bg-mainColor text-white": "bg-white"} flex flex-row gap-2 items-center w-full p-2 rounded-lg font-bold text-lg group-hover:bg-mainColor group-hover:text-white cursor-pointer transition-colors ease-in-out duration-500`}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-settings-icon lucide-settings"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" /><circle cx={12} cy={12} r={3} /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-settings-icon lucide-settings mt-1"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" /><circle cx={12} cy={12} r={3} /></svg>
                                 <span>إعدادات الحساب</span>
                             </NavLink>
                         </li>
                         <li className='group'>
-                            <Link to="/userProfile" className='flex flex-row gap-2 items-center w-full p-2 rounded-lg font-bold text-lg group-hover:bg-mainColor group-hover:text-white transition-colors ease-in-out duration-500'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-info-icon lucide-info"><circle cx={12} cy={12} r={10} /><path d="M12 16v-4" /><path d="M12 8h.01" /></svg>
+                            <NavLink to="/userProfile/helpCenter" className={({ isActive }) => `${ isActive? "bg-mainColor text-white": "bg-white"} flex flex-row gap-2 items-center w-full p-2 rounded-lg font-bold text-lg group-hover:bg-mainColor group-hover:text-white cursor-pointer transition-colors ease-in-out duration-500`}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-info-icon lucide-info mt-1"><circle cx={12} cy={12} r={10} /><path d="M12 16v-4" /><path d="M12 8h.01" /></svg>
                                 <span>مركز المساعدة</span>
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
