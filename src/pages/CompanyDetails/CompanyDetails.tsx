@@ -11,9 +11,9 @@ import shopCategory from "../../assets/products/shop-categosfdry-image.webp";
 
 export default function CompanyDetails() {
   return (
-    <div className='bg-backGroundColor flex flex-col gap-5 py-10 px-4 md:px-8 lg:px-16'>
+    <div className='bg-backGroundColor flex flex-col gap-5 py-10 px-4 md:px-8 lg:px-16 pt-20'>
       <header>
-        <p className='text-paragraphTextColor flex flex-row gap-2'>
+        <p className='text-paragraphTextColor flex flex-row items-center gap-2'>
           <span>الرئيسية</span>
           <img src="/company-details/CaretLeft.svg" alt="CaretLeft" />
           <span>الشركات</span>
@@ -25,7 +25,7 @@ export default function CompanyDetails() {
       <section className='bg-white rounded-2xl border border-borderColor'>
         <div className="flex flex-col md:flex-row gap-5 p-2 md:p-4">
           {/* img */}
-          <div className="w-full md:w-96 h-80 rounded-t-2xl md:rounded-e-none md:rounded-s-2xl overflow-hidden">
+          <div className="w-full md:w-80 md:min-h-80 rounded-t-2xl md:rounded-e-none md:rounded-s-2xl overflow-hidden">
             <img src={companyDetailsImg} loading='lazy' alt="company-details" className='w-full h-full object-cover' />
           </div>
 
@@ -33,14 +33,14 @@ export default function CompanyDetails() {
           <div className="flex flex-col gap-5">
             <header className='flex flex-col text-center gap-5'>
               <div className="flex flex-row gap-5">
-                <h1 className='text-textColor font-bold text-2xl md:text-3xl lg:text-4xl'>شركة مصنع الغذاء الطبيعي</h1>
+                <h1 className='text-textColor font-bold text-2xl'>شركة مصنع الغذاء الطبيعي</h1>
                 <div className="bg-secondBackGroundColor rounded-4xl hidden xmd:flex flex-row gap-1 items-center justify-center h-fit px-4 py-2">
                   <img src="/company-details/Shield.svg" alt="company-details-Shield" className='w-5 h-5' />
                   <span className='text-mainColor'>شركة موثقة</span>
                 </div>
               </div>
 
-              <div className="flex flex-row items-center gap-3">
+              <div className="flex flex-row flex-wrap items-center gap-3">
                 <div className="bg-secondBackGroundColor rounded-4xl xmd:hidden flex flex-row gap-1 items-center justify-center h-fit px-4 py-2">
                   <img src="/company-details/Shield.svg" alt="company-details-Shield" className='w-5 h-5' />
                   <span className='text-mainColor'>شركة موثقة</span>
@@ -54,7 +54,7 @@ export default function CompanyDetails() {
             <div className="flex flex-col h-full justify-between gap-5">
               <ul className='flex flex-row flex-wrap gap-5'>
                 <li className='flex flex-row gap-1 items-center justify-center text-paragraphTextColor'>
-                  <img src="/gray-icons/Users.svg" alt="company-details-Users" className='w-4 h-4' />
+                  <img src="/gray-icons/Users.svg" alt="company-details-Users" className='w-4 h-4 mt-0.5' />
                   <span>51-200 موظف</span>
                 </li>
                 <li className='flex flex-row gap-1 items-center justify-center text-paragraphTextColor'>
@@ -62,7 +62,7 @@ export default function CompanyDetails() {
                   <span>متوسط الرد 2 ساعة</span>
                 </li>
                 <li className='flex flex-row gap-1 items-center justify-center text-paragraphTextColor'>
-                  <img src="/gray-icons/Timer.svg" alt="company-details-Timer" className='w-4 h-4' />
+                  <img src="/gray-icons/Timer.svg" alt="company-details-Timer" className='w-4 h-4 mt-0.5' />
                   <span>متوسط الرد 2 ساعة</span>
                 </li>
               </ul>
@@ -87,20 +87,20 @@ export default function CompanyDetails() {
               </div>
 
               {/* buttons */}
-              <div className="flex flex-row flex-wrap justify-center gap-2">
-                <button className='bg-mainColor w-28 md:w-32 rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
+              <div className="grid grid-cols-2 xmd:grid-cols-4 gap-4">
+                <button className='bg-mainColor rounded flex flex-row items-center justify-center gap-1 lg:px-3 py-2 cursor-pointer'>
                   <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-circle-icon lucide-message-circle text-white"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
                   <span className='text-white'>طلب خدمة</span>
                 </button>
-                <button className='bg-[#F1F1F1CC] w-28 border border-paragraphTextColor rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
+                <button className='bg-[#F1F1F1CC] border border-paragraphTextColor rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
                   <img src="/gray-icons/Phone.svg" alt="company-details-Phone" className='w-5 h-5' />
                   <span className='text-paragraphTextColor'>اتصال</span>
                 </button>
-                <button className='bg-[#2CC161] w-28 rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
+                <button className='bg-[#2CC161] rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
                   <img src="/whatsAppWhite.svg" alt="whatsAppWhite" className='w-5 h-5' />
                   <span className='text-white'>واتساب</span>
                 </button>
-                <button className='bg-[#F1F1F1CC] w-28 md:w-32 border border-paragraphTextColor rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
+                <button className='bg-[#F1F1F1CC] border border-paragraphTextColor rounded flex flex-row items-center justify-center gap-1 lg:px-3 py-2 cursor-pointer'>
                   <img src="/gray-icons/Envelope.svg" alt="company-details-Envelope" className='w-5 h-5' />
                   <span className='text-paragraphTextColor'>إرسال بريد</span>
                 </button>
@@ -128,14 +128,14 @@ export default function CompanyDetails() {
                 </li>
                 <li>
                   <h1 className='flex flex-row items-center gap-1'>
-                    <img src="/company-details/green-icons/Users.svg" alt="company-details-Users" className='w-4 h-4' />
+                    <img src="/company-details/green-icons/Users.svg" alt="company-details-Users" className='w-4 h-4 mt-0.5' />
                     <span className='text-mainColor'>عدد الموظفين</span>
                   </h1>
                   <p className='text-paragraphTextColor ps-5'>51-200 موظف</p>
                 </li>
                 <li>
                   <h1 className='flex flex-row items-center gap-1'>
-                    <img src="/company-details/green-icons/Timer.svg" alt="company-details-Timer" className='w-4 h-4' />
+                    <img src="/company-details/green-icons/Timer.svg" alt="company-details-Timer" className='w-4 h-4 mt-1' />
                     <span className='text-mainColor'>ساعات العمل</span>
                   </h1>
                   <p className='text-paragraphTextColor ps-5'>الأحد - الخميس: 8:00 ص - 5:00 م</p>
