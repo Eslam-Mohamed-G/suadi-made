@@ -88,8 +88,8 @@ export default function CompanyDetails() {
 
               {/* buttons */}
               <div className="flex flex-row flex-wrap justify-center gap-2">
-                <button className='bg-mainColor w-28 rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
-                  <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-white"><circle cx={8} cy={21} r={1} /><circle cx={19} cy={21} r={1} /><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>
+                <button className='bg-mainColor w-28 md:w-32 rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
+                  <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-circle-icon lucide-message-circle text-white"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
                   <span className='text-white'>طلب خدمة</span>
                 </button>
                 <button className='bg-[#F1F1F1CC] w-28 border border-paragraphTextColor rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
@@ -97,10 +97,10 @@ export default function CompanyDetails() {
                   <span className='text-paragraphTextColor'>اتصال</span>
                 </button>
                 <button className='bg-[#2CC161] w-28 rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
-                  <img src="/company-details/ChatCircle.svg" alt="company-details-ChatCircle" className='w-5 h-5' />
+                  <img src="/whatsAppWhite.svg" alt="whatsAppWhite" className='w-5 h-5' />
                   <span className='text-white'>واتساب</span>
                 </button>
-                <button className='bg-[#F1F1F1CC] w-28 border border-paragraphTextColor rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
+                <button className='bg-[#F1F1F1CC] w-28 md:w-32 border border-paragraphTextColor rounded flex flex-row items-center justify-center gap-1 px-3 py-2 cursor-pointer'>
                   <img src="/gray-icons/Envelope.svg" alt="company-details-Envelope" className='w-5 h-5' />
                   <span className='text-paragraphTextColor'>إرسال بريد</span>
                 </button>
@@ -456,7 +456,7 @@ export default function CompanyDetails() {
 
                 <li>
                   <h1 className='flex flex-row items-center gap-1'>
-                    <img src="/company-details/green-icons/Phone.svg" alt="company-details-Phone" className='w-4 h-4' />
+                    <img src="/company-details/green-icons/Phone.svg" alt="company-details-Phone" className='w-4 h-4 mt-1' />
                     <span className='text-mainColor'>الهاتف</span>
                   </h1>
                   <p className='text-paragraphTextColor ps-5'>+966 11 234 5678</p>
@@ -464,7 +464,7 @@ export default function CompanyDetails() {
 
                 <li>
                   <h1 className='flex flex-row items-center gap-1'>
-                    <img src="/company-details/green-icons/ChatCircle.svg" alt="company-details-ChatCircle" className='w-4 h-4' />
+                    <img src="/company-details/green-icons/whatsAppGreen.svg" alt="company-details-whatsAppGreen" className='w-4 h-4 mt-1' />
                     <span className='text-mainColor'>واتساب</span>
                   </h1>
                   <p className='text-paragraphTextColor ps-5'>+966 11 234 5678</p>
