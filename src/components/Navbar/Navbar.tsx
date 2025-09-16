@@ -42,7 +42,7 @@ export default function Navbar() {
                     <span>إنشاء حساب</span>
                 </Link>
                 <button className='bg-mainColor rounded-lg px-4 py-2'>
-                    <span className='text-white'>تسجيل دخول</span>
+                    <Link to="/userProfile/mainPage" className='text-white'>تسجيل دخول</Link>
                 </button>
             </div>
         </div>
