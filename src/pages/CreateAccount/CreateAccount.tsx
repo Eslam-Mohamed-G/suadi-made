@@ -4,15 +4,15 @@ import grayLogo from '../../assets/logo/gray-logo-saudi-made.webp'
 
 export default function CreateAccount() {
   return (
-    <div className='flex flex-col items-center bg-backGroundColor pt-40 h-dvh text-center'>
+    <div className='flex flex-col items-center bg-backGroundColor pt-20 md:pt-40 h-dvh text-center overflow-hidden'>
       <header>
-        <h1 className='text-4xl font-bold text-textColor'>من أنت؟</h1>
-        <p className='text-paragraphTextColor text-lg'>اختر الطريقة التي تريد استخدام منصة صناعة سعودية بها</p>
+        <h1 className='text-2xl md:text-4xl font-bold text-textColor'>من أنت؟</h1>
+        <p className='text-paragraphTextColor text-sm md:text-lg'>اختر الطريقة التي تريد استخدام منصة صناعة سعودية بها</p>
       </header>
 
-      <div className="flex flex-row gap-5 md:gap-10 mt-5 relative">
+      <div className="flex flex-col md:flex-row gap-5 md:gap-10 mt-5 relative">
         {/* logo */}
-        <div className="absolute bottom-full end-full">
+        <div className="absolute bottom-full start-0 lg:-start-36 hidden md:block">
           <div className="w-40 h-40">
             <img src={grayLogo} loading='lazy' alt="gray-logo-saudi-made" className='w-full h-full object-contain' />
           </div>
@@ -49,7 +49,7 @@ export default function CreateAccount() {
         </div>
 
         {/* logo */}
-        <div className="absolute top-full start-full">
+        <div className="absolute top-full end-0 lg:start-full hidden md:block">
           <div className="w-40 h-40">
             <img src={grayLogo} loading='lazy' alt="gray-logo-saudi-made" className='w-full h-full object-contain' />
           </div>

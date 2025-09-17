@@ -105,21 +105,21 @@ export default function Compaines() {
                                     <img src={companyImg} loading='lazy' alt="campany-img" className='w-full' />
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                    <h3 className='text-xl md:text-2xl text-textColor font-bold flex flex-row items-center gap-2'>شركة البناء المتقدم<img src="/CheckCircle.png" alt="CheckCircle" className='w-5 h-5 mt-1' /></h3>
-                                    <span className='bg-secondaryColor text-white w-fit rounded-4xl px-4 py-2'>الخدمات اللوجيستية</span>
+                                    <h3 className='text-xl text-textColor font-bold flex flex-row items-center gap-2'>شركة البناء المتقدم<img src="/CheckCircle.png" alt="CheckCircle" className='w-5 h-5 mt-1' /></h3>
+                                    <span className='bg-secondaryColor text-white w-fit rounded-4xl px-4 py-2 text-xs font-bold'>الخدمات اللوجيستية</span>
                                 </div>
                             </header>
 
                             <div className="flex flex-col gap-4">
-                                <p className='text-paragraphTextColor text-lg'>شركة رائدة في مجال البناء والإنشاءات مع خبرة تزيد عن 25 عاماً في تنفيذ المشاريع الكبرى والمتوسطة. نقدم حلول متكاملة في البناء والتشييد.</p>
+                                <p className='text-paragraphTextColor text-sm'>شركة رائدة في مجال البناء والإنشاءات مع خبرة تزيد عن 25 عاماً في تنفيذ المشاريع الكبرى والمتوسطة. نقدم حلول متكاملة في البناء والتشييد.</p>
                                 <div className="flex flex-row justify-between items-center text-paragraphTextColor text-lg">
-                                    <span className='flex flex-row items-center justify-center gap-1'>
+                                    <span className='flex flex-row items-center justify-center gap-1 text-sm'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-paragraphTextColor"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx={12} cy={10} r={3} /></svg>
                                         سعودية • الرياض
                                     </span>
                                     <span className='flex flex-row items-center justify-center gap-1'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx={12} cy={12} r={3} /></svg>
-                                        <span className='mb-1'>9.7k</span>
+                                        <span className='mb-1 text-sm'>9.7k</span>
                                     </span>
                                 </div>
 
@@ -136,9 +136,9 @@ export default function Compaines() {
                                 </div>
 
                                 <div className="flex flex-row items-center gap-3">
-                                    <span className='bg-gray-200 rounded-3xl px-2 py-1'>B2B</span>
-                                    <span className='bg-gray-200 rounded-3xl px-2 py-1'>مقاول معتمد</span>
-                                    <span className='bg-gray-200 rounded-3xl px-2 py-1'>ISO 9001</span>
+                                    <span className='bg-gray-200 rounded-3xl px-2 py-1 text-xs font-bold'>B2B</span>
+                                    <span className='bg-gray-200 rounded-3xl px-2 py-1 text-xs font-bold'>مقاول معتمد</span>
+                                    <span className='bg-gray-200 rounded-3xl px-2 py-1 text-xs font-bold'>ISO 9001</span>
                                 </div>
 
                                 <div className="flex flex-row items-center gap-4 w-full">
