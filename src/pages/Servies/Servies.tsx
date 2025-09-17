@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import campanyImg from '../../assets/images/CompanyDetails.webp'
+import companyImg from '../../assets/images/CompanyDetails.webp'
 
 export default function Servies() {
     const [viewType, setViewType] = useState<"grid" | "list">("grid");
@@ -117,7 +117,7 @@ export default function Servies() {
                             <header className={`flex ${viewType === "grid" ? "flex-row" : "flex-col"} gap-2 items-center`}>
                                 {/* img */}
                                 <div className={viewType === "grid" ? "w-36 h-36 md:w-40 md:h-40 rounded-2xl overflow-hidden" : "w-full h-48 md:w-52 rounded-t-2xl md:rounded-e-none md:rounded-s-2xl overflow-hidden"}>
-                                    <img src={campanyImg} loading='lazy' alt="campany-img" className='w-full h-full' />
+                                    <img src={companyImg} loading='lazy' alt="campany-img" className='w-full h-full' />
                                 </div>
                                 <div className={`flex ${viewType === "grid" ? "flex-col" : "hidden"} gap-2`}>
                                     <h3 className='text-xl text-textColor font-bold flex flex-row items-center gap-2'>شركة البناء المتقدم<img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4' /></h3>
@@ -126,7 +126,7 @@ export default function Servies() {
                             </header>
                             <div className="flex flex-col flex-1">
                                 {/* header */}
-                                <div className={`flex ${viewType === "grid" ? "hidden" : "flex-row flex-wrap lg:gap-20"} gap-2`}>
+                                <div className={`flex ${viewType === "grid" ? "hidden" : "flex-row flex-wrap lg:gap-20 mb-2"} gap-2`}>
                                     <h3 className='text-xl text-textColor font-bold flex flex-row items-center gap-2'>شركة البناء المتقدم<img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4' /></h3>
                                     <span className='bg-secondaryColor text-white w-fit rounded-4xl px-4 py-2 text-xs font-bold'>الخدمات اللوجيستية</span>
                                 </div>
