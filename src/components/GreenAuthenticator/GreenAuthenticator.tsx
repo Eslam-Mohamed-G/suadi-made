@@ -24,13 +24,13 @@ export default function GreenAuthenticator({header, text}: propsType) {
                 <ul className='flex flex-row xmd:flex-col gap-2 mt-5'>
                     <li className='flex flex-row items-center gap-2'>
                         <div className="w-9 h-9 bg-[#48795ACC] rounded-lg flex items-center justify-center">
-                            <img src="/ShieldCheck.png" alt="ShieldCheck" className='w-5 h-5' />
+                            <img src="/gold-img/ShieldCheck.png" alt="ShieldCheck" className='w-5 h-5' />
                         </div>
                         <span className='text-lg font-bold'>شركات موثقة ومعتمدة</span>
                     </li>
                     <li className='flex flex-row items-center gap-2'>
                         <div className="w-9 h-9 bg-[#48795ACC] rounded-lg flex items-center justify-center">
-                            <img src="/Users.png" alt="Users" className='w-5 h-5' />
+                            <img src="/gold-img/Users.png" alt="Users" className='w-5 h-5' />
                         </div>
                         <span className='text-lg font-bold'>دعم عملاء متميز</span>
                     </li>

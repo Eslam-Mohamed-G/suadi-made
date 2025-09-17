@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import campanyImg from '../../assets/images/campany-img.webp';
+import categosfdry from '../../assets/products/shop-categosfdry-image.webp'
+import madicen from '../../assets/products/madicen.webp'
 
 export default function Chart() {
     return (
-        <div className='bg-backGroundColor flex flex-col gap-5 py-12 px-4 md:px-8 lg:px-16'>
+        <div className='bg-backGroundColor flex flex-col gap-5 py-12 pt-20 px-4 md:px-8 lg:px-16'>
             <header>
                 <p className='text-paragraphTextColor flex flex-row items-center gap-2'>
                     <span>الرئيسية</span>
@@ -18,7 +21,7 @@ export default function Chart() {
                     <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 bg-borderColor/35 border border-borderColor shadow rounded-2xl">
                         {/* img */}
                         <div className="w-full sm:w-52 h-40 rounded-t-2xl sm:rounded-t-none sm:rounded-r-2xl overflow-hidden">
-                            <img src="/company-details/CompanyDetails.png" alt="campany-img" className='w-full h-full object-cover' />
+                            <img src={campanyImg} loading='lazy' alt="campany-img" className='w-full h-full object-cover' />
                         </div>
 
                         {/* informaiton */}
@@ -29,7 +32,7 @@ export default function Chart() {
 
                                 <div className="flex flex-row flex-wrap justify-between items-center gap-2 md:gap-4 text-paragraphTextColor text-lg">
                                     <span className='flex flex-row items-center justify-center gap-1'>
-                                        <img src="/company-details/MapPin.svg" alt="company-details-MapPin" className='w-4 h-4' />
+                                        <img src="/gray-icons/MapPin.svg" alt="company-details-MapPin" className='w-4 h-4 mt-1' />
                                         سعودية • الرياض
                                     </span>
                                     <span className='flex flex-row items-center justify-center gap-1 text-sm'>
@@ -37,7 +40,7 @@ export default function Chart() {
                                         3-5 ايام
                                     </span>
                                     <span className='flex flex-row items-center justify-center gap-1 text-sm'>
-                                        <img src="/company-details/Timer.svg" alt="company-details-Timer" className='w-5 h-5' />
+                                        <img src="/gray-icons/Timer.svg" alt="company-details-Timer" className='w-5 h-5' />
                                         حد أدنى للطلب: 10
                                     </span>
                                 </div>
@@ -55,7 +58,7 @@ export default function Chart() {
                     <div className="flex flex-col gap-5">
                         <ul className='flex flex-col gap-4'>
                             <li className='flex flex-col sm:flex-row items-center gap-4 py-5 pe-2 border-b border-borderColor'>
-                                <img src="/products/shop-categosfdry-image.png" alt="shop-categosfdry-image" className='w-32 h-32' />
+                                <img src={categosfdry} loading='lazy' alt="shop-categosfdry-image" className='w-32 h-32' />
 
                                 <div className="flex flex-col items-start justify-between gap-5 w-full">
                                     {/* header */}
@@ -84,14 +87,14 @@ export default function Chart() {
                             </li>
 
                             <li className='flex flex-col sm:flex-row items-center gap-4 py-5 pe-2 border-b border-borderColor'>
-                                <img src="/products/madicen.png" alt="madicen" className='w-32 h-32' />
+                                <img src={madicen} loading='lazy' alt="madicen" className='w-32 h-32' />
 
                                 <div className="flex flex-col items-start justify-between gap-5 w-full">
                                     {/* header */}
                                     <div className="flex flex-col items-center justify-center">
                                         <header className='text-2xl flex gap-10'>
-                                            <h1 className='text-textColor'>زيت الطبخ الطبيعي</h1>
-                                            <span className='text-mainColor'>250 ر.س</span>
+                                            <h1 className='text-textColor'>منتج دوائي</h1>
+                                            <span className='text-mainColor'>99.99 ر.س</span>
                                         </header>
                                     </div>
 

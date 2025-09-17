@@ -35,7 +35,7 @@ export default function CreateAccount() {
 
         <div className="bg-white rounded-xl shadow flex flex-col items-center justify-center px-4 md:px-8 py-4">
           <div className="bg-[#FFF7E2] rounded-lg w-16 h-16 flex items-center justify-center mb-4">
-            <img src="/bulding.svg" alt="bulding" className='w-10 h-10 object-center' />
+            <img src="/gold-img/bulding.svg" alt="bulding" className='w-10 h-10 object-center' />
           </div>
           <div className="flex flex-col">
             <h1 className='text-2xl font-bold text-textColor'>أنا صاحب شركة</h1>

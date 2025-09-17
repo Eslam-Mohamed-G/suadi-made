@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import campanyImg from '../../assets/images/campany-img.webp'
 
 export default function CompletePurchase2() {
-    const [modal, setModal] = useState(false);
+    const [modal, setModal] = useState(true);
     const isModalOpen = ()=>{
         setModal(!modal)
     }
@@ -22,7 +23,7 @@ export default function CompletePurchase2() {
                         <span className='rounded-full bg-mainColor w-10 h-10 text-white flex items-center justify-center relative z-10'>1</span>
                         <span className=''>معلومات العميل والتسليم</span>
                     </div>
-                    <span className='h-0.5 bg-mainColor absolute start-20 end-14 top-5' />
+                    <span className='h-0.5 bg-mainColor absolute start-24 end-14 top-5' />
                     <div className="flex flex-col items-center justify-center gap-2 ">
                         <span className='rounded-full bg-[#D9D9D9] w-10 h-10 text-textColor flex items-center justify-center relative z-10'>2</span>
                         <span className=''>مراجعة والدفع</span>
@@ -45,18 +46,18 @@ export default function CompletePurchase2() {
                         <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 pb-4">
                             {/* img */}
                             <div className="rounded-t-2xl overflow-hidden">
-                                <img src="/campany-img.png" alt="campany-img" className='w-full h-full object-cover' />
+                                <img src={campanyImg} loading='lazy' alt="campany-img" className='w-full h-full object-cover' />
                             </div>
 
                             {/* informaiton */}
                             <div className="flex flex-col md:flex-row gap-2 items-center justify-between w-full pb-3 pe-2">
                                 {/* text */}
                                 <div className="flex flex-col gap-2 sm:gap-4 w-fit">
-                                    <h3 className='flex flex-row items-center gap-2 text-textColor text-2xl'>شركة مصنع الغذاء الطبيعي<img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4 mt-1' /></h3>
+                                    <h3 className='flex flex-row items-center gap-2 text-textColor text-2xl'>شركة مصنع الغذاء الطبيعي<img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4 mt-1.5' /></h3>
 
                                     <div className="flex flex-row flex-wrap justify-between items-center gap-2 md:gap-4 text-paragraphTextColor text-lg">
                                         <span className='flex flex-row items-center justify-center gap-1'>
-                                            <img src="/company-details/MapPin.svg" alt="company-details-MapPin" className='w-4 h-4' />
+                                            <img src="/gray-icons/MapPin.svg" alt="company-details-MapPin" className='w-4 h-4 mt-1' />
                                             سعودية • الرياض
                                         </span>
                                     </div>
@@ -70,18 +71,18 @@ export default function CompletePurchase2() {
                         <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 pb-4">
                             {/* img */}
                             <div className="rounded-t-2xl overflow-hidden">
-                                <img src="/campany-img.png" alt="campany-img" className='w-full h-full object-cover' />
+                                <img src={campanyImg} loading='lazy' alt="campany-img" className='w-full h-full object-cover' />
                             </div>
 
                             {/* informaiton */}
                             <div className="flex flex-col md:flex-row gap-2 items-center justify-between w-full pb-3 pe-2">
                                 {/* text */}
                                 <div className="flex flex-col gap-2 sm:gap-4 w-fit">
-                                    <h3 className='flex flex-row items-center gap-2 text-textColor text-2xl'>شركة مصنع الغذاء الطبيعي<img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4 mt-1' /></h3>
+                                    <h3 className='flex flex-row items-center gap-2 text-textColor text-2xl'>شركة مصنع الغذاء الطبيعي<img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4 mt-1.5' /></h3>
 
                                     <div className="flex flex-row flex-wrap justify-between items-center gap-2 md:gap-4 text-paragraphTextColor text-lg">
                                         <span className='flex flex-row items-center justify-center gap-1'>
-                                            <img src="/company-details/MapPin.svg" alt="company-details-MapPin" className='w-4 h-4' />
+                                            <img src="/gray-icons/MapPin.svg" alt="company-details-MapPin" className='w-4 h-4 mt-1' />
                                             سعودية • الرياض
                                         </span>
                                     </div>

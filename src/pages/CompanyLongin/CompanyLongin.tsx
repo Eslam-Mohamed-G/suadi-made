@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function CompanyLongin() {
     return (
-        <div className="min-h-dvh pt-16 pb-8 px-4 md:px-8 lg:px-16 bg-backGroundColor">
+        <div className="min-h-dvh pt-28 pb-8 px-4 md:px-8 lg:px-16 bg-backGroundColor">
             <div className="flex flex-col xmd:flex-row w-full xmd:w-fit mx-auto bg-white rounded-2xl border border-borderColor shadow overflow-hidden">
                 <div className="w-full xmd:w-80 xlg:w-96">
                     <GreenAuthenticator header={`انضم إلى "صناعة سعودية" كشركة`} text="أنشئ حساب شركتك بسهولة، اعرض خدماتك، تواصل مع عملاء جدد، واستقبل طلبات مباشرة من خلال منصتنا" />
@@ -21,7 +21,7 @@ export default function CompanyLongin() {
                             <div className="flex flex-col gap-1 w-full">
                                 <label htmlFor="email"><span className='text-lg text-textColor font-bold'>البريد الإلكتروني المهني</span><span className='text-red-500'>*</span></label>
                                 <div className="relative">
-                                    <img src="/Envelope.svg" alt="Envelope" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
+                                    <img src="/gray-icons/Envelope.svg" alt="Envelope" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
                                     <input type="text" name="email" id="email" placeholder='أدخل بريدك الإلكتروني' className='border border-borderColor bg-backGroundColor/30 text-paragraphTextColor w-full rounded-lg py-2 ps-8' />
                                 </div>
                             </div>
@@ -29,14 +29,14 @@ export default function CompanyLongin() {
                             <div className="flex flex-col gap-1 w-full">
                                 <label htmlFor="phone"><span className='text-lg text-textColor font-bold'>رقم جوال الشركة</span><span className='text-red-500'>*</span></label>
                                 <div className="relative">
-                                    <img src="/Phone.svg" alt="Phone" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
+                                    <img src="/gray-icons/Phone.svg" alt="Phone" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
                                     <input type="text" name="phone" id="phone" placeholder='أدخل رقم جوالك' className='border border-borderColor bg-backGroundColor/30 text-paragraphTextColor w-full rounded-lg py-2 ps-8' />
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1 w-full">
                                 <label htmlFor="email"><span className='text-lg text-textColor font-bold'>كلمة المرور</span><span className='text-red-500'>*</span></label>
                                 <div className="relative">
-                                    <img src="/eye-password-icon.svg" alt="eye-password-icon" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
+                                    <img src="/gray-icons/eye-password-icon.svg" alt="eye-password-icon" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
                                     <input type="text" name="email" id="email" placeholder='أدخل كلمة المرور' className='border border-borderColor bg-backGroundColor/30 text-paragraphTextColor w-full rounded-lg py-2 ps-8' />
                                 </div>
                             </div>

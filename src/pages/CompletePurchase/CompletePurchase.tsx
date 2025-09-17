@@ -33,7 +33,7 @@ export default function CompletePurchase() {
                     <div className="flex flex-col gap-2 w-full">
                         <label htmlFor="userName"><span className='text-lg text-textColor font-bold'>الاسم الكامل</span><span className='text-red-500'>*</span></label>
                         <div className="relative">
-                            <img src="/one-user.svg" alt="one-user" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
+                            <img src="/gray-icons/one-user.svg" alt="one-user" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
                             <input type="text" name="userName" id="userName" placeholder='أدخل اسمك بالكامل' className='border border-borderColor text-paragraphTextColor w-full rounded-lg py-2 ps-8' />
                         </div>
                     </div>
@@ -41,14 +41,14 @@ export default function CompletePurchase() {
                     <div className="flex flex-col gap-2 w-full">
                         <label htmlFor="phone"><span className='text-lg text-textColor font-bold'>رقم الجوال</span><span className='text-red-500'>*</span></label>
                         <div className="relative">
-                            <img src="/Phone.svg" alt="Phone" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
+                            <img src="/gray-icons/Phone.svg" alt="Phone" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
                             <input type="text" name="phone" id="phone" placeholder='أدخل رقم جوالك' className='border border-borderColor text-paragraphTextColor w-full rounded-lg py-2 ps-8' />
                         </div>
                     </div>
                     <div className="flex flex-col gap-2 w-full">
                         <label htmlFor="userName"><span className='text-lg text-textColor font-bold'>بريدك الإلكتروني</span><span className='text-red-500'>*</span></label>
                         <div className="relative">
-                            <img src="/Envelope.svg" alt="Envelope" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
+                            <img src="/gray-icons/Envelope.svg" alt="Envelope" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
                             <input type="text" name="userName" id="userName" placeholder='أدخل بريدك الإلكتروني' className='border border-borderColor text-paragraphTextColor w-full rounded-lg py-2 ps-8' />
                         </div>
                     </div>
@@ -86,7 +86,7 @@ export default function CompletePurchase() {
                     <div className="flex flex-col gap-2 w-full">
                         <label htmlFor="mobile"><span className='text-lg text-textColor font-bold'>رقم الجوال</span></label>
                         <div className="relative">
-                            <img src="/Phone.svg" alt="Phone" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
+                            <img src="/gray-icons/Phone.svg" alt="Phone" className='w-5 h-5 absolute top-1/2 -translate-y-1/2 start-2' />
                             <input type="text" name="mobile" id="mobile" placeholder='أدخل رقم جوالك' className='border border-borderColor text-paragraphTextColor w-full rounded-lg py-2 ps-8' />
                         </div>
                     </div>
