@@ -8,7 +8,7 @@ export default function MainPage() {
                 <p className='text-paragraphTextColor'>تواصل مع الشركات والموردين</p>
             </header>
 
-            <main className='flex flex-col gap-5 md:gap-10 px-8 py-4'>
+            <main className='flex flex-col gap-5 md:gap-10 px-4 md:px-8 py-4'>
                 <div className="flex flex-row justify-between items-center backgroundLinear px-4 md:px-16 py-8 rounded-lg">
                     <div className="">
                         <h1 className='text-3xl text-white font-bold'>مرحباً احمد عمر منصور</h1>

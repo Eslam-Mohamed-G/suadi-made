@@ -8,7 +8,7 @@ export default function HelpCenter() {
                     <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-headset-icon lucide-headset w-10 h-10"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" /><path d="M21 16v2a4 4 0 0 1-4 4h-5" /></svg>
                 </div>
 
-                <div className="flex flex-col items-center justify-center min-w-96 lg:w-xl">
+                <div className="flex flex-col items-center justify-center min-w-60 md:min-w-96 lg:w-xl">
                     <h1 className='text-2xl font-bold'>مركز المساعدة</h1>
                     <p className='text-lg'>كيف يمكننا مساعدتك اليوم؟</p>
                     <div className="relative w-full mt-5">
@@ -23,27 +23,27 @@ export default function HelpCenter() {
                         </span>
                     </div>
 
-                    <div className="flex flex-row gap-4 mt-5">
+                    <div className="flex flex-row flex-wrap gap-4 mt-5">
                         <button type='button' className='bg-lightseagreen rounded-4xl px-4 py-2 cursor-pointer'>
-                            <span>إنشاء حساب</span>
+                            <span className='text-sm sm:text-lg'>إنشاء حساب</span>
                         </button>
                         <button type='button' className='bg-lightseagreen rounded-4xl px-4 py-2 cursor-pointer'>
-                            <span>تتبع الطلب</span>
+                            <span className='text-sm sm:text-lg'>تتبع الطلب</span>
                         </button>
                         <button type='button' className='bg-lightseagreen rounded-4xl px-4 py-2 cursor-pointer'>
-                            <span>طرق الدفع</span>
+                            <span className='text-sm sm:text-lg'>طرق الدفع</span>
                         </button>
                         <button type='button' className='bg-lightseagreen rounded-4xl px-4 py-2 cursor-pointer'>
-                            <span>التواصل مع الشركات</span>
+                            <span className='text-sm sm:text-lg'>التواصل مع الشركات</span>
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center">
-                <h1 className='text-3xl text-textColor font-bold'>لم تجد ما تبحث عنه؟</h1>
+            <div className="flex flex-col justify-center sm:items-center">
+                <h1 className='text-2xl md:text-3xl text-textColor font-bold'>لم تجد ما تبحث عنه؟</h1>
                 <p className='text-paragraphTextColor text-lg'>فريق الدعم متاح لمساعدتك في أي وقت</p>
-                <div className="flex flex-row gap-5 items-center justify-center mt-4">
+                <div className="flex flex-row flex-wrap gap-5 items-center justify-center mt-4">
                     <button type='button' className='flex gap-1 items-center justify-center text-white bg-mainColor py-2 px-8 rounded-lg cursor-pointer'>
                         <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-circle-icon lucide-message-circle mt-1"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg>
                         <span>راسل فريق الدعم</span>

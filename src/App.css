@@ -45,9 +45,9 @@ body {
 .parallax{
     background-image: url("../src/assets/logo/main-photo.webp");
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     z-index: -1;
     position: relative;
     width: 100%;

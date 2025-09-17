@@ -10,7 +10,7 @@ export default function MessagePage() {
                 <p className='text-paragraphTextColor'>تواصل مع الشركات والموردين</p>
             </header>
 
-            <main className='px-8 py-4'>
+            <main className='px-4 md:px-8 py-4'>
                 <div className="flex flex-col md:flex-row bg-white border border-borderColor rounded-lg">
                     <div className="w-full md:max-w-80 md:border-e border-borderColor p-4">
                         <div className="border-b border-borderColor pb-5">
@@ -66,7 +66,7 @@ export default function MessagePage() {
 
                     {/* content */}
                     <div className="w-full flex flex-col p-4">
-                        <header className='flex flex-row items-center justify-between border-b border-borderColor pb-3'>
+                        <header className='flex flex-row flex-wrap items-center justify-center md:justify-between border-b border-borderColor pb-3'>
                             <div className="flex flex-row items-center gap-2">
                                 <div className="w-12 h-10 rounded-full overflow-hidden">
                                     <img src={campanyPhoto} loading='lazy' alt="campanyPhoto" className='w-full h-full' />
