@@ -92,7 +92,7 @@ export default function Home() {
                     </div>
 
                     <div className="group">
-                        <button className='border border-mainColor rounded-lg px-10 py-1 w-fit bg-white group-hover:bg-mainColor transition-colors ease-in-out duration-500'>
+                        <button className='border border-mainColor rounded-lg px-10 py-2 w-fit bg-white cursor-pointer group-hover:bg-mainColor transition-colors ease-in-out duration-500'>
                             <span className='text-mainColor text-lg font-medium group-hover:text-white transition-colors ease-in-out duration-500'>عرض جميع الفئات</span>
                         </button>
                     </div>
@@ -264,9 +264,9 @@ export default function Home() {
                     </div>
 
                     <div className="group">
-                        <button className='border border-mainColor rounded-lg px-10 py-1 w-fit bg-white group-hover:bg-mainColor cursor-pointer transition-colors ease-in-out duration-500'>
+                        <Link to="/" className='border border-mainColor rounded-lg px-10 py-2 w-fit bg-white group-hover:bg-mainColor cursor-pointer transition-colors ease-in-out duration-500'>
                             <span className='text-mainColor text-lg font-medium group-hover:text-white transition-colors ease-in-out duration-500'>عرض جميع المنتجات</span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </section>

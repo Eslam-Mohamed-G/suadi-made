@@ -16,7 +16,7 @@ export default function Footer() {
                     </div>
                     <p>دليل الأعمال السعودي الرائد الذي يربط بين الشركات والعملاء، ويساهم في نمو الاقتصاد السعودي ضمن رؤية 2030.</p>
 
-                    <div className="flex flex-row gap-4">
+                    <div className="flex flex-row gap-4 mt-2">
                         <a href="#"><img src="/footer/icons/Facebook.svg" alt="facebook-icon" /></a>
                         <a href="#"><img src="/footer/icons/linkedIn.svg" alt="linkedIn-icon" /></a>
                         <a href="#"><img src="/footer/icons/youtube.svg" alt="youtube-icon" className='w-7 h-7' /></a>
@@ -26,7 +26,7 @@ export default function Footer() {
                 </div>
 
                 {/* الروابط */}
-                <div className="flex flex-row gap-10 justify-between text-white max-w-72 md:max-w-80">
+                <div className="flex flex-row gap-8 justify-between text-white max-w-72 md:max-w-80">
                     <ul className='flex flex-col gap-2'>
                         <li className='text-2xl text-secondaryTextColor mb-2'>روابط سريعة</li>
                         <li><Link to="/" className='text-lg'>الرئيسية</Link></li>

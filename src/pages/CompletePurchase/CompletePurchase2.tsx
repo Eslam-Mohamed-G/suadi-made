@@ -8,7 +8,7 @@ export default function CompletePurchase2() {
         setModal(!modal)
     }
     return (
-        <div className='bg-backGroundColor flex flex-col gap-5 py-12 px-4 md:px-8 lg:px-16'>
+        <div className='bg-backGroundColor flex flex-col gap-5 py-12 pt-24 px-4 md:px-8 lg:px-16'>
             <header className='flex flex-col items-center gap-5'>
                 <p className='text-paragraphTextColor flex flex-row gap-1 items-center sm:gap-2 w-full'>
                     <span>الرئيسية</span>
@@ -21,9 +21,9 @@ export default function CompletePurchase2() {
                 <div className="flex flex-row items-center justify-between md:w-xl lg:w-2xl min-w-2xs font-bold text-lg text-textColor relative">
                     <div className="flex flex-col items-center justify-center gap-2">
                         <span className='rounded-full bg-mainColor w-10 h-10 text-white flex items-center justify-center relative z-10'>1</span>
-                        <span className=''>معلومات العميل والتسليم</span>
+                        <span className=''>معلومات العميل </span>
                     </div>
-                    <span className='h-0.5 bg-mainColor absolute start-24 end-14 top-5' />
+                    <span className='h-0.5 bg-mainColor absolute start-20 end-14 top-5' />
                     <div className="flex flex-col items-center justify-center gap-2 ">
                         <span className='rounded-full bg-[#D9D9D9] w-10 h-10 text-textColor flex items-center justify-center relative z-10'>2</span>
                         <span className=''>مراجعة والدفع</span>
@@ -121,7 +121,6 @@ export default function CompletePurchase2() {
                 </Link>
                 <button onClick={isModalOpen} className='text-white bg-mainColor rounded-lg py-2 px-4 flex flex-row items-center gap-2 cursor-pointer'>
                     <span>تأكيد الطلب</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-left-icon lucide-arrow-left"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
                 </button>
             </div>
 

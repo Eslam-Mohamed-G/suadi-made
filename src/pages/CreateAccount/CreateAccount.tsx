@@ -27,7 +27,7 @@ export default function CreateAccount() {
             <p>أبحث عن شركات وخدمات، وأقدّم طلباتي مباشرة.</p>
           </div>
 
-          <Link to="/userSignUp" className='bg-mainColor border border-mainColor text-white flex flex-row items-center justify-center gap-2 w-full rounded-lg py-1 mt-4 cursor-pointer'>
+          <Link to="/userSignUp" className='bg-mainColor border border-mainColor text-white flex flex-row items-center justify-center gap-2 w-full rounded-lg py-2 mt-4 cursor-pointer'>
             <span>استمر كعميل</span>
             <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-left-icon lucide-arrow-left"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
           </Link>
@@ -42,7 +42,7 @@ export default function CreateAccount() {
             <p>أعرض خدمات شركتي، وأستقبل طلبات العملاء.</p>
           </div>
 
-          <Link to="/companySingUp" className='bg-[#B49C5C] text-white flex flex-row items-center justify-center gap-2 w-full rounded-lg py-1 mt-4 cursor-pointer'>
+          <Link to="/companySingUp" className='bg-[#B49C5C] text-white flex flex-row items-center justify-center gap-2 w-full rounded-lg py-2 mt-4 cursor-pointer'>
             <span>استمر كشركة</span>
             <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-left-icon lucide-arrow-left"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
           </Link>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function CompletePurchase() {
     return (
-        <div className='bg-backGroundColor flex flex-col gap-5 py-12 px-4 md:px-8 lg:px-16'>
+        <div className='bg-backGroundColor flex flex-col gap-5 py-12 pt-24 px-4 md:px-8 lg:px-16'>
             <header className='flex flex-col items-center gap-5'>
                 <p className='text-paragraphTextColor flex flex-row gap-1 items-center sm:gap-2 w-full'>
                     <span>الرئيسية</span>
@@ -16,7 +16,7 @@ export default function CompletePurchase() {
                 <div className="flex flex-row items-center justify-between md:w-xl lg:w-2xl min-w-2xs font-bold text-lg text-textColor relative">
                     <div className="flex flex-col items-center justify-center gap-2">
                         <span className='rounded-full bg-mainColor w-10 h-10 text-white flex items-center justify-center relative z-10'>1</span>
-                        <span className=''>معلومات العميل والتسليم</span>
+                        <span className=''>معلومات العميل </span>
                     </div>
                     <span className='h-0.5 bg-[#D9D9D9] absolute start-20 end-14 top-5'></span>
                     <div className="flex flex-col items-center justify-center gap-2 ">
@@ -28,7 +28,7 @@ export default function CompletePurchase() {
 
             <form action="" className='flex flex-col gap-5'>
                 <div className="bg-white rounded-2xl border border-borderColor flex flex-col justify-between gap-5 p-4 md:p-6 shadow">
-                    <h1 className='text-3xl text-textColor border-b border-borderColor pb-2'>معلومات العميل والتسليم</h1>
+                    <h1 className='text-2xl text-textColor font-bold border-b border-borderColor pb-2'>معلومات العميل </h1>
 
                     <div className="flex flex-col gap-2 w-full">
                         <label htmlFor="userName"><span className='text-lg text-textColor font-bold'>الاسم الكامل</span><span className='text-red-500'>*</span></label>
@@ -55,7 +55,7 @@ export default function CompletePurchase() {
                 </div>
 
                 <div className="bg-white rounded-2xl border border-borderColor flex flex-col justify-between gap-5 p-4 md:p-6 shadow">
-                    <h1 className='text-3xl text-textColor border-b border-borderColor pb-2'>عنوان التسليم</h1>
+                    <h1 className='text-2xl text-textColor font-bold border-b border-borderColor pb-2'>عنوان التسليم</h1>
 
                     <div className="relative">
                         <input

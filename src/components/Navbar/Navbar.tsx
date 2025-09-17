@@ -10,7 +10,7 @@ export default function Navbar() {
                     <img src={mainLogo} alt="saudi-made-logo" className="w-full object-contain" />
                 </Link>
 
-                <ul className='hidden md:flex flex-row gap-5 font-medium text-2xl h-full mt-2 '>
+                <ul className='hidden md:flex flex-row gap-5 font-medium text-lg h-full mt-2 '>
                     <li>
                         <NavLink to="/">
                             <span>الرئيسية</span>
