@@ -8,6 +8,8 @@ import couch from "../../assets/products/couch.webp";
 import electronic from "../../assets/products/electronic.webp";
 import madicen from "../../assets/products/madicen.webp";
 import shopCategory from "../../assets/products/shop-categosfdry-image.webp";
+import ShoppingCart from "../../assets/products/ShoppingCart.webp";
+import { products } from '../../components/ProductCard/ProductCard';
 
 export default function CompanyDetails() {
   return (
@@ -176,167 +178,33 @@ export default function CompanyDetails() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-5 w-full">
-              {/* 1 */}
-              <div className="">
-                <div className="group border border-mainColor rounded-lg overflow-hidden">
-                  {/* img */}
-                  <div className="w-full bg-gray-100 flex items-center justify-center h-40">
-                    <div className="w-40 h-40">
-                      <img src={shopCategory} loading='lazy' alt="shop-categosfdry-image" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
+              {products.map((item, i) => (
+                <div key={i} className="">
+                  <div className="group border border-mainColor rounded-lg overflow-hidden">
+                    {/* img */}
+                    <div className="w-full bg-gray-100 flex items-center justify-center h-40">
+                      <div className="w-40 h-40 flex items-center justify-center">
+                        <img src={item.img} loading='lazy' alt="shop-categosfdry-image" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
+                      </div>
                     </div>
-                  </div>
 
-                  {/* information */}
-                  <div className="flex flex-col gap-4 px-4 py-2 h-1/2">
-                    <header>
-                      <h1 className='text-textColor font-bold text-xl w-full flex flex-row items-center justify-between'>زيت الطبخ الطبيعي <span className='text-mainColor font-bold'>25.99 ر.س</span></h1>
-                      <p className='text-paragraphTextColor text-xl mt-4'>زيت طبخ طبيعي عالي الجودة من أفضل المصادر</p>
-                    </header>
-                    <div className="flex flex-row justify-between gap-5 w-full">
-                      <Link to="/productDetails" className='bg-white w-full py-2 text-center rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
-                      <Link to="/chart" className='bg-mainColor w-full flex items-center justify-center gap-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
-                        <img src="/products/ShoppingCart.png" alt="ShoppingCart" className='w-5 h-5' />
-                        <span className='text-white'>أضف إلى السلة</span>
-                      </Link>
+                    {/* information */}
+                    <div className="flex flex-col gap-4 px-4 py-2 h-1/2">
+                      <header>
+                        <h1 className='text-textColor font-bold text-lg w-full flex flex-row items-center justify-between'>{item.title}<span className='text-mainColor font-bold'>{item.price}</span></h1>
+                        <p className='text-paragraphTextColor text-sm mt-4'>{item.description}</p>
+                      </header>
+                      <div className="flex flex-row justify-between gap-5 w-full">
+                        <Link to="/productDetails" className='bg-white w-full py-2 text-center rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
+                        <Link to="/chart" className='bg-mainColor w-full flex items-center justify-center gap-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
+                          <img src={ShoppingCart} alt="ShoppingCart" className='w-5 h-5' />
+                          <span className='text-white'>أضف إلى السلة</span>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              {/* 2 */}
-              <div className="">
-                <div className="group border border-mainColor rounded-lg overflow-hidden">
-                  {/* img */}
-                  <div className="w-full bg-gray-100 flex items-center justify-center h-40">
-                    <div className="w-36 h-36">
-                      <img src={madicen} loading='lazy' alt="madicen" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
-                    </div>
-                  </div>
-
-                  {/* information */}
-                  <div className="flex flex-col gap-4 px-4 py-2 h-1/2">
-                    <header>
-                      <h1 className='text-textColor font-bold text-xl w-full flex flex-row items-center justify-between'>زيت الطبخ الطبيعي <span className='text-mainColor font-bold'>25.99 ر.س</span></h1>
-                      <p className='text-paragraphTextColor text-xl mt-4'>زيت طبخ طبيعي عالي الجودة من أفضل المصادر</p>
-                    </header>
-                    <div className="flex flex-row justify-between gap-5 w-full">
-                      <Link to="/productDetails" className='bg-white w-full py-2 text-center rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
-                      <Link to="/chart" className='bg-mainColor w-full flex items-center justify-center gap-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
-                        <img src="/products/ShoppingCart.png" alt="ShoppingCart" className='w-5 h-5' />
-                        <span className='text-white'>أضف إلى السلة</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* 3 */}
-              <div className="">
-                <div className="group border border-mainColor rounded-lg overflow-hidden">
-                  {/* img */}
-                  <div className="w-full bg-gray-100 flex items-center justify-center h-40">
-                    <div className="w-40 h-40">
-                      <img src={applePhone} loading='lazy' alt="apple-phone" className='w-full object-cover group-hover:scale-110 transition-all ease-in-out duration-500' />
-                    </div>
-                  </div>
-
-                  {/* information */}
-                  <div className="flex flex-col gap-4 px-4 py-2 h-1/2">
-                    <header>
-                      <h1 className='text-textColor font-bold text-xl w-full flex flex-row items-center justify-between'>زيت الطبخ الطبيعي <span className='text-mainColor font-bold'>25.99 ر.س</span></h1>
-                      <p className='text-paragraphTextColor text-xl mt-4'>زيت طبخ طبيعي عالي الجودة من أفضل المصادر</p>
-                    </header>
-                    <div className="flex flex-row justify-between gap-5 w-full">
-                      <Link to="/productDetails" className='bg-white w-full py-2 text-center rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
-                      <Link to="/chart" className='bg-mainColor w-full flex items-center justify-center gap-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
-                        <img src="/products/ShoppingCart.png" alt="ShoppingCart" className='w-5 h-5' />
-                        <span className='text-white'>أضف إلى السلة</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* 4 */}
-              <div className="">
-                <div className="group border border-mainColor rounded-lg overflow-hidden">
-                  {/* img */}
-                  <div className="w-full bg-gray-100 flex items-center justify-center h-40">
-                    <div className="w-52 h-52 flex items-center justify-center">
-                      <img src={couch} loading='lazy' alt="couch" className='w-full object-center group-hover:scale-110 transition-all ease-in-out duration-500' />
-                    </div>
-                  </div>
-
-                  {/* information */}
-                  <div className="flex flex-col gap-4 px-4 py-2 h-1/2">
-                    <header>
-                      <h1 className='text-textColor font-bold text-xl w-full flex flex-row items-center justify-between'>زيت الطبخ الطبيعي <span className='text-mainColor font-bold'>25.99 ر.س</span></h1>
-                      <p className='text-paragraphTextColor text-xl mt-4'>زيت طبخ طبيعي عالي الجودة من أفضل المصادر</p>
-                    </header>
-                    <div className="flex flex-row justify-between gap-5 w-full">
-                      <Link to="/productDetails" className='bg-white w-full py-2 text-center rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
-                      <Link to="/chart" className='bg-mainColor w-full flex items-center justify-center gap-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
-                        <img src="/products/ShoppingCart.png" alt="ShoppingCart" className='w-5 h-5' />
-                        <span className='text-white'>أضف إلى السلة</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* 5 */}
-              <div className="">
-                <div className="group border border-mainColor rounded-lg overflow-hidden">
-                  {/* img */}
-                  <div className="w-full bg-gray-100 h-40 flex items-center justify-center">
-                    <div className="w-40 h-40 flex items-center justify-center">
-                      <img src={electronic} loading='lazy' alt="electronic" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
-                    </div>
-                  </div>
-
-                  {/* information */}
-                  <div className="flex flex-col gap-4 px-4 py-2 h-1/2">
-                    <header>
-                      <h1 className='text-textColor font-bold text-xl w-full flex flex-row items-center justify-between'>زيت الطبخ الطبيعي <span className='text-mainColor font-bold'>25.99 ر.س</span></h1>
-                      <p className='text-paragraphTextColor text-xl mt-4'>زيت طبخ طبيعي عالي الجودة من أفضل المصادر</p>
-                    </header>
-                    <div className="flex flex-row justify-between gap-5 w-full">
-                      <Link to="/productDetails" className='bg-white w-full py-2 text-center rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
-                      <Link to="/chart" className='bg-mainColor w-full flex items-center justify-center gap-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
-                        <img src="/products/ShoppingCart.png" alt="ShoppingCart" className='w-5 h-5' />
-                        <span className='text-white'>أضف إلى السلة</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* 6 */}
-              <div className="">
-                <div className="group border border-mainColor rounded-lg overflow-hidden">
-                  {/* img */}
-                  <div className="w-full bg-gray-100 flex items-center justify-center h-40">
-                    <div className="w-40 h-40 flex items-center justify-center">
-                      <img src={books} loading='lazy' alt="books" className='w-full object-contain group-hover:scale-110 transition-all ease-in-out duration-500' />
-                    </div>
-                  </div>
-
-                  {/* information */}
-                  <div className="flex flex-col gap-4 px-4 py-2 h-1/2">
-                    <header>
-                      <h1 className='text-textColor font-bold text-xl w-full flex flex-row items-center justify-between'>زيت الطبخ الطبيعي <span className='text-mainColor font-bold'>25.99 ر.س</span></h1>
-                      <p className='text-paragraphTextColor text-xl mt-4'>زيت طبخ طبيعي عالي الجودة من أفضل المصادر</p>
-                    </header>
-                    <div className="flex flex-row justify-between gap-5 w-full">
-                      <Link to="/productDetails" className='bg-white w-full py-2 text-center rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
-                      <Link to="/chart" className='bg-mainColor w-full flex items-center justify-center gap-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
-                        <img src="/products/ShoppingCart.png" alt="ShoppingCart" className='w-5 h-5' />
-                        <span className='text-white'>أضف إلى السلة</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
