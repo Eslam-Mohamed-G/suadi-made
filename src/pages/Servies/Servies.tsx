@@ -134,7 +134,7 @@ export default function Servies() {
                                 {/* content */}
                                 <div className={`flex ${viewType === "grid" ? "flex-col" : "flex-col md:flex-row justify-between"} gap-4 flex-1`}>
                                     <div className={`flex ${viewType === "grid" ? "flex-col" : "flex-col-reverse md:flex-row-reverse lg:gap-16"} gap-4`}>
-                                        <ul className='text-paragraphTextColor flex flex-col'>
+                                        <ul className='text-paragraphTextColor flex flex-col text-sm'>
                                             <li className='text-xl font-bold text-textColor'><span>الخدمات الأساسية:</span></li>
                                             <li className='flex flex-row gap-1 items-center'><img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4 mt-1' /><span>تصميم معماري متكامل</span> </li>
                                             <li className='flex flex-row gap-1 items-center'><img src="/CheckCircle.png" alt="CheckCircle" className='w-4 h-4 mt-1' /><span>إدارة مشاريع البناء</span> </li>
