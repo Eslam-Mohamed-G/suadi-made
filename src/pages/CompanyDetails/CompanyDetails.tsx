@@ -2,12 +2,6 @@ import React from 'react'
 import StarRating from './StarRating'
 import { Link } from 'react-router-dom'
 import companyDetailsImg from '../../assets/images/CompanyDetails.webp';
-import applePhone from "../../assets/products/apple-phone.webp";
-import books from "../../assets/products/books.webp";
-import couch from "../../assets/products/couch.webp";
-import electronic from "../../assets/products/electronic.webp";
-import madicen from "../../assets/products/madicen.webp";
-import shopCategory from "../../assets/products/shop-categosfdry-image.webp";
 import ShoppingCart from "../../assets/products/ShoppingCart.webp";
 import { products } from '../../components/ProductCard/ProductCard';
 
@@ -27,7 +21,7 @@ export default function CompanyDetails() {
       <section className='bg-white rounded-2xl border border-borderColor'>
         <div className="flex flex-col md:flex-row gap-5 p-2 md:p-4">
           {/* img */}
-          <div className="w-full md:w-80 md:min-h-80 rounded-t-2xl md:rounded-e-none md:rounded-s-2xl overflow-hidden">
+          <div className="w-full md:w-80 md:min-h-72 rounded-t-2xl md:rounded-e-none md:rounded-s-2xl overflow-hidden">
             <img src={companyDetailsImg} loading='lazy' alt="company-details" className='w-full h-full object-cover' />
           </div>
 
@@ -37,24 +31,24 @@ export default function CompanyDetails() {
               <div className="flex flex-row gap-5">
                 <h1 className='text-textColor font-bold text-2xl'>شركة مصنع الغذاء الطبيعي</h1>
                 <div className="bg-secondBackGroundColor rounded-4xl hidden xmd:flex flex-row gap-1 items-center justify-center h-fit px-4 py-2">
-                  <img src="/company-details/Shield.svg" alt="company-details-Shield" className='w-5 h-5' />
-                  <span className='text-mainColor'>شركة موثقة</span>
+                  <img src="/company-details/Shield.svg" alt="company-details-Shield" className='w-4 h-4' />
+                  <span className='text-mainColor text-sm'>شركة موثقة</span>
                 </div>
               </div>
 
               <div className="flex flex-row flex-wrap items-center gap-3">
                 <div className="bg-secondBackGroundColor rounded-4xl xmd:hidden flex flex-row gap-1 items-center justify-center h-fit px-4 py-2">
-                  <img src="/company-details/Shield.svg" alt="company-details-Shield" className='w-5 h-5' />
-                  <span className='text-mainColor'>شركة موثقة</span>
+                  <img src="/company-details/Shield.svg" alt="company-details-Shield" className='w-4 h-4' />
+                  <span className='text-mainColor text-xs font-bold'>شركة موثقة</span>
                 </div>
-                <span className='bg-backGroundColor rounded-3xl px-3 py-1'>التصنيع</span>
-                <span className='bg-backGroundColor rounded-3xl px-3 py-1'>التقنية</span>
-                <span className='bg-backGroundColor rounded-3xl px-3 py-1'>الهندسة</span>
+                <span className='bg-backGroundColor rounded-3xl px-3 py-1 text-xs font-bold'>التصنيع</span>
+                <span className='bg-backGroundColor rounded-3xl px-3 py-1 text-xs font-bold'>التقنية</span>
+                <span className='bg-backGroundColor rounded-3xl px-3 py-1 text-xs font-bold'>الهندسة</span>
               </div>
             </header>
 
             <div className="flex flex-col h-full justify-between gap-5">
-              <ul className='flex flex-row flex-wrap gap-5'>
+              <ul className='flex flex-row flex-wrap gap-5 text-sm'>
                 <li className='flex flex-row gap-1 items-center justify-center text-paragraphTextColor'>
                   <img src="/gray-icons/Users.svg" alt="company-details-Users" className='w-4 h-4 mt-0.5' />
                   <span>51-200 موظف</span>
@@ -69,21 +63,21 @@ export default function CompanyDetails() {
                 </li>
               </ul>
 
-              <div className="flex flex-row items-center gap-2">
+              <div className="flex flex-row items-center gap-2 text-sm">
                 <div className="flex flex-row items-center">
-                  <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
-                  <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
-                  <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
-                  <img src="/gold-img/Gold_Star.svg" alt="star" className='w-5 h-5' />
-                  <img src="/gray-star.png" alt="star" className='w-5 h-5' />
+                  <img src="/gold-img/Gold_Star.svg" alt="star" className='w-4 h-4' />
+                  <img src="/gold-img/Gold_Star.svg" alt="star" className='w-4 h-4' />
+                  <img src="/gold-img/Gold_Star.svg" alt="star" className='w-4 h-4' />
+                  <img src="/gold-img/Gold_Star.svg" alt="star" className='w-4 h-4' />
+                  <img src="/gray-star.png" alt="star" className='w-4 h-4' />
                 </div>
                 <span>4.7</span>
                 <span className='text-sm text-paragraphTextColor'>(156)</span>
               </div>
 
               <div className="w-fit flex flex-row items-center justify-center gap-1 text-mainColor">
-                <img src="/gray-icons/MapPin.svg" alt="company-details-MapPin" className='w-4 h-4' />
-                <span className=''>
+                <img src="/company-details/green-icons/MapPin.svg" alt="company-details-MapPin" className='w-4 h-4' />
+                <span className='text-sm'>
                   سعودية • الرياض
                 </span>
               </div>
@@ -116,7 +110,7 @@ export default function CompanyDetails() {
         <div className="col-span-4 md:col-span-3">
           {/* information */}
           <div className="bg-white border border-borderColor rounded-2xl p-4">
-            <h1 className='text-textColor text-2xl'>عن الشركة:</h1>
+            <h1 className='text-textColor text-xl font-bold'>عن الشركة:</h1>
             <p className='text-paragraphTextColor'>شركة رائدة في مجال الحلول الصناعية والتقنية، نقدم خدمات متكاملة في التصنيع والهندسة والصيانة. نعمل مع أحدث التقنيات لتقديم حلول مبتكرة تلبي احتياجات عملائنا في مختلف القطاعات الصناعية.</p>
 
             <div className="mt-5">
@@ -155,9 +149,9 @@ export default function CompanyDetails() {
 
           {/* products */}
           <div className="bg-white border border-borderColor rounded-2xl p-4 mt-4">
-            <h1 className='text-textColor font-bold text-2xl'>المنتجات:</h1>
+            <h1 className='text-textColor font-bold text-xl'>المنتجات:</h1>
             <div className="flex flex-row flex-wrap justify-center sm:justify-between items-center gap-5 mt-5">
-              <ul className='flex flex-row flex-wrap gap-2'>
+              <ul className='flex flex-row flex-wrap gap-2 text-sm'>
                 <li className='bg-mainColor rounded-xl px-2 md:px-4 py-2 cursor-pointer'><span className='text-white'>الكل</span></li>
                 <li className='bg-[#F1F1F1CC] border border-borderColor rounded-xl px-2 md:px-4 py-2 cursor-pointer'><span className='text-paragraphTextColor'>البناء والتشييد</span></li>
                 <li className='bg-[#F1F1F1CC] border border-borderColor rounded-xl px-2 md:px-4 py-2 cursor-pointer'><span className='text-paragraphTextColor'>الأثاث والتصميم</span></li>
@@ -167,9 +161,9 @@ export default function CompanyDetails() {
               <div className="relative">
                 <input
                   type="text"
-                  name='area'
+                  name='date'
                   placeholder='فرز حسب التاريخ'
-                  className="w-full border border-gray-400 rounded-lg p-2 cursor-pointer focus:outline-none hover:border-mainColor hover:bg-secondBackGroundColor transition-colors ease-in-out duration-500 placeholder:text-lg placeholder:text-textColor"
+                  className="w-full border border-gray-400 rounded-lg p-2 cursor-pointer focus:outline-none hover:border-mainColor hover:bg-secondBackGroundColor transition-colors ease-in-out duration-500 placeholder:text-sm placeholder:text-textColor"
                 />
                 <span className={`absolute end-1 top-1/2 -translate-y-1/2 transition-all ease-in-out duration-300`}>
                   <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-textColor"><path d="m18 15-6-6-6 6" /></svg>
@@ -189,16 +183,16 @@ export default function CompanyDetails() {
                     </div>
 
                     {/* information */}
-                    <div className="flex flex-col gap-4 px-4 py-2 h-1/2">
+                    <div className="flex flex-col gap-4 px-2 sm:px-4 py-2 h-1/2">
                       <header>
-                        <h1 className='text-textColor font-bold text-lg w-full flex flex-row items-center justify-between'>{item.title}<span className='text-mainColor font-bold'>{item.price}</span></h1>
+                        <h1 className='text-textColor font-bold text-base w-full flex flex-row items-center justify-between'>{item.title}<span className='text-mainColor font-bold'>{item.price}</span></h1>
                         <p className='text-paragraphTextColor text-sm mt-4'>{item.description}</p>
                       </header>
-                      <div className="flex flex-row justify-between gap-5 w-full">
-                        <Link to="/productDetails" className='bg-white w-full py-2 text-center rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
-                        <Link to="/chart" className='bg-mainColor w-full flex items-center justify-center gap-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
+                      <div className="flex flex-row justify-between gap-2 sm:gap-5 w-full">
+                        <Link to="/productDetails" className='bg-white w-full py-2 text-center text-sm rounded-lg border border-mainColor text-mainColor hover:bg-mainColor hover:text-white transition-colors ease-in-out duration-500 cursor-pointer'>عرض التفاصيل</Link>
+                        <Link to="/chart" className='bg-mainColor w-full flex items-center justify-center gap-1 px-1 py-2 rounded-lg border border-mainColor text-mainColor cursor-pointer'>
                           <img src={ShoppingCart} alt="ShoppingCart" className='w-5 h-5' />
-                          <span className='text-white'>أضف إلى السلة</span>
+                          <span className='text-white text-sm'>أضف إلى السلة</span>
                         </Link>
                       </div>
                     </div>
@@ -256,59 +250,25 @@ export default function CompanyDetails() {
 
             <div className="mt-5">
               <ul className='flex flex-col gap-4'>
-                <li className="py-3 sm:py-4 border-b border-borderColor">
-                  <div className="flex items-center ">
-                    <div className="shrink-0">
-                      <img className="w-8 h-8 md:w-16 md:h-16 rounded-full" src="/company-details/Photo by James Barr.png" alt="Thomas image" />
+                {Array.from({ length: 3 }, (_, i) => (
+                  <li className="py-3 sm:py-4 border-b border-borderColor">
+                    <div className="flex items-center ">
+                      <div className="shrink-0">
+                        <img className="w-8 h-8 md:w-16 md:h-16 rounded-full" src="/company-details/Photo by James Barr.png" alt="Thomas image" />
+                      </div>
+                      <div className="flex-1 min-w-0 ms-4">
+                        <p className="font-medium text-gray-900 truncate flex flex-row items-center gap-4">
+                          <span className='text-xl'>احمد عمر ماهر</span>
+                          <span className='text-paragraphTextColor'>1445/09/8</span>
+                          <span></span>
+                        </p>
+                        <p className="text-lg text-gray-500 truncate dark:text-gray-400">
+                          شركة ممتازة وخدمة عالية الجودة. تم تنفيذ المشروع في الوقت المحدد بمهنية عالية.
+                        </p>
+                      </div>
                     </div>
-                    <div className="flex-1 min-w-0 ms-4">
-                      <p className="font-medium text-gray-900 truncate flex flex-row items-center gap-4">
-                        <span className='text-xl'>احمد عمر ماهر</span>
-                        <span className='text-paragraphTextColor'>1445/09/8</span>
-                        <span></span>
-                      </p>
-                      <p className="text-lg text-gray-500 truncate dark:text-gray-400">
-                        شركة ممتازة وخدمة عالية الجودة. تم تنفيذ المشروع في الوقت المحدد بمهنية عالية.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-
-                <li className="py-3 sm:py-4 border-b border-borderColor">
-                  <div className="flex items-center ">
-                    <div className="shrink-0">
-                      <img className="w-8 h-8 md:w-16 md:h-16 rounded-full" src="/company-details/Photo by James Barr.png" alt="Thomas image" />
-                    </div>
-                    <div className="flex-1 min-w-0 ms-4">
-                      <p className="font-medium text-gray-900 truncate flex flex-row items-center gap-4">
-                        <span className='text-xl'>احمد عمر ماهر</span>
-                        <span className='text-paragraphTextColor'>1445/09/8</span>
-                        <span></span>
-                      </p>
-                      <p className="text-lg text-gray-500 truncate dark:text-gray-400">
-                        شركة ممتازة وخدمة عالية الجودة. تم تنفيذ المشروع في الوقت المحدد بمهنية عالية.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-
-                <li className="py-3 sm:py-4 border-b border-borderColor">
-                  <div className="flex items-center ">
-                    <div className="shrink-0">
-                      <img className="w-8 h-8 md:w-16 md:h-16 rounded-full" src="/company-details/Photo by James Barr.png" alt="Thomas image" />
-                    </div>
-                    <div className="flex-1 min-w-0 ms-4">
-                      <p className="font-medium text-gray-900 truncate flex flex-row items-center gap-4">
-                        <span className='text-xl'>احمد عمر ماهر</span>
-                        <span className='text-paragraphTextColor'>1445/09/8</span>
-                        <span></span>
-                      </p>
-                      <p className="text-lg text-gray-500 truncate dark:text-gray-400">
-                        شركة ممتازة وخدمة عالية الجودة. تم تنفيذ المشروع في الوقت المحدد بمهنية عالية.
-                      </p>
-                    </div>
-                  </div>
-                </li>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
