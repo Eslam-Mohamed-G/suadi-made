@@ -13,12 +13,12 @@ A **React + Vite + TypeScript + Tailwind CSS** project to display a list of comp
 - ✅ Future-ready for API integration.  
 
 ## 📷 Screenshots
-![Grid View Screenshot](./view/preview.png)
+![Screenshot](./public/view/preview.jpg)
 ### Grid View
-![Grid View Screenshot](./view/preview-2.png)
+![Grid View Screenshot](./public/view/preview-2.png)
 
 ### List View
-![List View Screenshot](./view/preview-3.png)
+![List View Screenshot](./public/view//preview-3.png)
 
 ---
 
