@@ -38,7 +38,7 @@ export default function Footer() {
                     </ul>
                     <ul className='flex flex-col gap-2'>
                         <li className='text-2xl text-secondaryTextColor mb-2'>خدماتنا</li>
-                        <li><Link to="/" className='text-lg'>تسجيل الشلركات</Link></li>
+                        <li><Link to="/" className='text-lg'>تسجيل الشركات</Link></li>
                         <li><Link to="/" className='text-lg'>الملفات التجارية</Link></li>
                         <li><Link to="/" className='text-lg'>طلب الخدمات</Link></li>
                         <li><Link to="/" className='text-lg'>التقييمات والملراجعات</Link></li>

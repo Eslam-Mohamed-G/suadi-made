@@ -195,7 +195,7 @@ export default function Home() {
                     <div className="flex flex-col items-center justify-center gap-5">
                         <div className="bg-mainColor w-10 h-10 text-white text-2xl font-medium rounded-full text-center content-center">2</div>
                         <div className="group w-full">
-                            <div className="border border-mainColor rounded-lg p-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
+                            <div className="border border-mainColor rounded-lg py-4 group-hover:bg-mainColor transition-colors ease-in-out duration-500">
                                 <div className="flex flex-col gap-2 justify-center items-center">
                                     <div className="rounded-full w-20 h-20 bg-mainColor group-hover:bg-white flex items-center justify-center transition-colors ease-in-out duration-500">
                                         <svg xmlns="http://www.w3.org/2000/svg" width={40} height={40} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-white group-hover:text-mainColor transition-colors ease-in-out duration-500"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx={12} cy={12} r={3} /></svg>
@@ -203,7 +203,7 @@ export default function Home() {
 
                                     <div className="flex flex-col items-center justify-center gap-1 text-textColor group-hover:text-white transition-colors ease-in-out duration-500">
                                         <span className=' text-xl font-bold'>زر الملف التجاري</span>
-                                        <span className='font-medium max-w-2xs text-center'>اطلع على تفاصيل الشركة، الخدمات المقدمة، التقييمات، ومعرض الأعمال السابقة</span>
+                                        <span className='font-medium max-w-80 text-center'>اطلع على تفاصيل الشركة، الخدمات المقدمة، التقييمات، ومعرض الأعمال السابقة</span>
                                     </div>
                                 </div>
                             </div>
