@@ -2,6 +2,8 @@
 
 A **React + Vite + TypeScript + Tailwind CSS** project to display a list of companies with the ability to switch between **Grid View** and **List View**. The project is fully **responsive** and designed to provide a clean and user-friendly experience.
 
+# [live demo](https://suadi-made.vercel.app/).
+
 ---
 
 ## 🚀 Features
