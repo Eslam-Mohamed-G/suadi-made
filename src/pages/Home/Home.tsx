@@ -116,7 +116,7 @@ export default function Home() {
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <h3 className='text-lg md:text-xl font-bold flex flex-row items-center justify-between'>لوجيستك الخليج <img src="/CheckCircle.png" alt="CheckCircle" className='w-3.5 h-3.5 md:w-4 md:h-4 mt-2' /></h3>
-                                    <span className='bg-secondaryColor text-xs text-center font-bold text-white rounded-2xl px-3 py-2'>الخدمات اللوجيستية</span>
+                                    <span className='bg-secondaryColor text-xs text-center font-bold text-red-500 rounded-2xl px-3 py-2'>الخدمات اللوجيستية</span>
                                 </div>
                             </header>
 
