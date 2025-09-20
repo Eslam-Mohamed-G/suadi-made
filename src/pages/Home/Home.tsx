@@ -11,35 +11,35 @@ export default function Home() {
     return (
         <main className='flex flex-col pt-16'>
             <section className="relative parallax mt-2">
-                <div className="relative z-10 flex flex-col items-center justify-center h-full gap-12">
+                <div className="relative z-30 flex flex-col items-center h-full gap-12 px-2 pt-16">
                     <div className="text-white">
-                        <h1 className="text-white text-4xl md:text-6xl font-bold flex flex-col text-center">
-                            <span className='tracking-tight'>مرحباً بك في صناعة سعودية</span>
-                            <span className='text-secondaryTextColor leading-24'>دليل الأعمال السعـودي الرائد</span>
+                        <h1 className="text-white text-2xl md:text-5xl font-bold flex flex-col text-center">
+                            <span className='tracking-tight md:leading-20'>مرحباً بك في صناعة سعودية</span>
+                            <span className='text-secondaryTextColor'>دليل الأعمال السعـودي الرائد</span>
                         </h1>
-                        <p className='text-center text-4xl pt-3'>اكتشف الشركات الموثوقة، اطلب الخدمات، ووسع شبكة علاقاتك التجارية</p>
+                        <p className='text-center text-base md:text-3xl pt-3'>اكتشف الشركات الموثوقة، اطلب الخدمات، ووسع شبكة علاقاتك التجارية</p>
                     </div>
 
                     {/* inputs */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 max-w-3xl gap-4 w-fit bg-white rounded-lg p-4">
+                    <form action="" className="grid grid-cols-2 md:grid-cols-4 max-w-3xl gap-2 md:gap-4 w-fit bg-white rounded-lg p-4 relative z-50">
                         <div className="flex flex-col gap-4">
-                            <label htmlFor="campany" className='text-2xl font-medium text-textColor'>اسم الشركة</label>
+                            <label htmlFor="campany" className='text-base md:text-2xl font-medium text-textColor'>اسم الشركة</label>
                             <input
                                 type="text"
                                 name='campany'
                                 placeholder='ابحث عن ...'
-                                className="w-full border-b border-gray-400 px-2 py-1 cursor-pointer focus:outline-none placeholder:text-lg"
+                                className="w-full border-b border-gray-400 px-2 py-1 focus:outline-none placeholder:text-base md:placeholder:text-lg"
                             />
                         </div>
 
                         <div className="flex flex-col gap-4">
-                            <label htmlFor="area" className='text-2xl font-medium text-textColor'>المنطقة</label>
+                            <label htmlFor="area" className='text-base md:text-2xl font-medium text-textColor'>المنطقة</label>
                             <div className="relative">
                                 <input
                                     type="text"
                                     name='area'
                                     placeholder='أين'
-                                    className="w-full border-b border-gray-400 px-2 py-1 cursor-pointer focus:outline-none placeholder:text-lg"
+                                    className="w-full border-b border-gray-400 px-2 py-1 focus:outline-none placeholder:text-base md:placeholder:text-lg"
                                 />
                                 <span className={`absolute end-1 top-1/2 -translate-y-1/2 -rotate-180 ltr:rotate-180 transition-all ease-in-out duration-300`}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-gray-400"><path d="m18 15-6-6-6 6" /></svg>
@@ -48,13 +48,13 @@ export default function Home() {
                         </div>
 
                         <div className="flex flex-col gap-4">
-                            <label htmlFor="sector" className='text-2xl font-medium text-textColor'>القطاع</label>
+                            <label htmlFor="sector" className='text-base md:text-2xl font-medium text-textColor'>القطاع</label>
                             <div className="relative">
                                 <input
                                     type="text"
                                     name='sector'
                                     placeholder='القطاع'
-                                    className="w-full border-b border-gray-400 px-2 py-1 cursor-pointer focus:outline-none placeholder:text-lg"
+                                    className="w-full border-b border-gray-400 px-2 py-1 focus:outline-none placeholder:text-base md:placeholder:text-lg"
                                 />
                                 <span className="absolute end-1 top-1/2 -translate-y-1/2 -rotate-180 ltr:rotate-180 transition-all ease-in-out duration-300">
                                     <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-gray-300"><path d="m18 15-6-6-6 6" /></svg>
@@ -63,12 +63,12 @@ export default function Home() {
                         </div>
 
                         <div className="content-end px-4">
-                            <button className='bg-mainColor text-white rounded-lg px-4 py-2 h-11 w-full flex flex-row gap-2 items-center justify-center cursor-pointer'>
+                            <button type='submit' className='bg-mainColor text-white rounded-lg px-4 py-2 h-11 w-full flex flex-row gap-2 items-center justify-center cursor-pointer'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="m21 21-4.34-4.34" /><circle cx={11} cy={11} r={8} /></svg>
                                 <span className='text-lg'>بحث</span>
                             </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </section>
 
